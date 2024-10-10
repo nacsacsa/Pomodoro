@@ -11,3 +11,11 @@ A TimeFlow Solutions jelenleg nem rendelkezik saját fejlesztésű időgazdálko
 ## 3. Vágyálom rendszer
 
 Az ideális rendszer egy olyan könnyen használható webes felületet kínál, amely zökkenőmentesen támogatja a Pomodoro technikát. A felhasználók beállíthatják az időzítőket a különböző feladatokra, és nyomon követhetik a munkameneteket, szüneteket és feladatok teljesítését. Az alkalmazás mobilra és asztali böngészőkre egyaránt optimalizált, így a felhasználók bárhol és bármikor hozzáférhetnek. Az adatbiztonság kiemelten fontos: a rendszer megfelel a legújabb adatvédelmi szabályozásoknak, például a GDPR-nak. Az alkalmazás emellett részletes statisztikákat nyújt a felhasználóknak az elvégzett Pomodoro ciklusokról, és személyre szabható jelentéseket generál a hosszú távú produktivitás elemzéséhez.
+
+## 4. Funkcionális követelmények
+
+- Időzítő: A felhasználóknak lehetőséget kell biztosítani a munkamenet időzítésére (alapértelmezés: 25 perc) és a szünetek beállítására.
+- Feladatkezelés: A felhasználók új feladatokat hozhatnak létre, hozzárendelhetik azokat a Pomodoro ciklusokhoz, és nyomon követhetik a teljesítményüket.
+- Statisztikai modul: A rendszer részletes statisztikákat biztosít a felhasználók munkameneteiről, beleértve a munkamenet-számot, az összes elvégzett feladatot és a hatékonyságot.
+- Rugalmas időzítés: A felhasználók testreszabhatják a Pomodoro és a szünetek időtartamát az egyéni igényeknek megfelelően.
+- Értesítések: Az alkalmazás értesítéseket küld a munkamenetek és szünetek kezdetekor és végén, hogy a felhasználók hatékonyan tudjanak dolgozni.
