@@ -5,3 +5,7 @@ A TimeFlow Solutions egy webalapú Pomodoro alkalmazást kíván fejleszteni, am
 
 ## 2. Jelenlegi helyzet
 Jelenleg a piacon számos Pomodoro alkalmazás található, de sokuk korlátozott funkcionalitással rendelkezik, vagy nem megfelelően testreszabható. A felhasználók gyakran szembesülnek olyan alkalmazásokkal, amelyek nem támogatják a munkafolyamataik nyomon követését, a statisztikai elemzéseket, vagy a feladatok szervezését. Továbbá sok meglévő Pomodoro alkalmazás nem biztosít reszponzív megoldást mobil platformokra, ami korlátozza azok használhatóságát. A TimeFlow Solutions ezt az űrt kívánja betölteni egy teljesen testreszabható, több eszközön működő, felhasználóbarát megoldással.
+
+## 3. Vágyálom rendszer
+
+A TimeFlow Solutions által fejlesztett új rendszer egy reszponzív Pomodoro időzítőt kínál, amely minden eszközön, így asztali gépen és mobilon is kiválóan működik. Az alkalmazás testreszabható időzítőt biztosít, így a felhasználók meghatározhatják a munkamenetek és szünetek hosszát, valamint egyedi feladatokat rendelhetnek hozzájuk. Az időzítési rendszer mellett a rendszer fejlett statisztikai modullal is rendelkezik, amely átfogó adatokat nyújt a felhasználói teljesítményről, segítve az egyéni fejlődést és produktivitás elemzését.
