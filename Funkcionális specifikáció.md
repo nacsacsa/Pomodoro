@@ -19,3 +19,7 @@ Az ideális rendszer egy olyan könnyen használható webes felületet kínál, 
 - Statisztikai modul: A rendszer részletes statisztikákat biztosít a felhasználók munkameneteiről, beleértve a munkamenet-számot, az összes elvégzett feladatot és a hatékonyságot.
 - Rugalmas időzítés: A felhasználók testreszabhatják a Pomodoro és a szünetek időtartamát az egyéni igényeknek megfelelően.
 - Értesítések: Az alkalmazás értesítéseket küld a munkamenetek és szünetek kezdetekor és végén, hogy a felhasználók hatékonyan tudjanak dolgozni.
+
+5. Rendszerre vonatkozó törvények
+
+A rendszer működése során figyelembe kell venni a vonatkozó adatvédelmi és adatkezelési szabályokat, mint például az Európai Unió által meghatározott GDPR (General Data Protection Regulation) szabályozást. A felhasználók személyes adatainak védelme érdekében az alkalmazás fejlesztése során biztosítani kell az adatok biztonságos tárolását és kezelését. Továbbá, mivel a rendszer internetes alapon működik, fontos a DMCA (Digital Millennium Copyright Act) és a szerzői jogi törvények betartása, különösen a felhasználói tartalmak és adatok kezelése során.
