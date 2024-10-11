@@ -25,3 +25,6 @@ A TimeFlow Solutions által fejlesztett új rendszer egy reszponzív Pomodoro id
 - Az Európai Unió által meghatározott GDPR (General Data Protection Regulation) előírásait
 - A felhasználói adatok, beleértve a munkamenetekhez kapcsolódó statisztikákat, biztonságos tárolását és feldolgozását a rendszer teljes életciklusa során garantálni kell.
 - Biztosítani kell, hogy a felhasználók beleegyezését adják a személyes adatok feldolgozásához, és lehetőséget kapjanak azok törlésére vagy módosítására.
+
+6. Jelenlegi üzleti folyamatok modellje
+A jelenlegi üzleti folyamatok alapján a felhasználók általában manuálisan követik nyomon a feladataikat és az elvégzett munkameneteket, vagy más, kevésbé hatékony szoftvereket használnak. Ezek a megoldások nem biztosítanak megfelelő statisztikai adatokat, nem reszponzívak, és a felhasználói élmény gyakran elmarad a várttól. A TimeFlow Solutions által fejlesztett alkalmazás automatizálja és integrálja a feladatkövetést a Pomodoro módszerrel, ezáltal csökkentve a manuális munka és az elhanyagolt feladatok számát.
