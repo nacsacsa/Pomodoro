@@ -18,3 +18,10 @@ A TimeFlow Solutions által fejlesztett új rendszer egy reszponzív Pomodoro id
 - Exportálási lehetőség: A felhasználók exportálhatják a statisztikákat CSV és PDF formátumban.
 - Mobil kompatibilitás: Az alkalmazás reszponzív kialakítású, így bármilyen eszközön használható.
 - Felhasználói fiókok: A felhasználók regisztrálhatnak, fiókot hozhatnak létre, és személyre szabhatják az alkalmazás funkcióit.
+
+## 5. Rendszerre vonatkozó törvények
+
+ Az alkalmazás fejlesztése során figyelembe kell venni a vonatkozó adatvédelmi és biztonsági jogszabályokat:
+- Az Európai Unió által meghatározott GDPR (General Data Protection Regulation) előírásait
+- A felhasználói adatok, beleértve a munkamenetekhez kapcsolódó statisztikákat, biztonságos tárolását és feldolgozását a rendszer teljes életciklusa során garantálni kell.
+- Biztosítani kell, hogy a felhasználók beleegyezését adják a személyes adatok feldolgozásához, és lehetőséget kapjanak azok törlésére vagy módosítására.
