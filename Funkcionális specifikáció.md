@@ -26,3 +26,7 @@ A rendszer működése során figyelembe kell venni a vonatkozó adatvédelmi é
 - Az Európai Unió által meghatározott GDPR (General Data Protection Regulation) szabályozást
 - A felhasználók személyes adatainak védelme érdekében az alkalmazás fejlesztése során biztosítani kell az adatok biztonságos tárolását és kezelését
 - Mivel a rendszer internetes alapon működik, fontos a DMCA (Digital Millennium Copyright Act) és a szerzői jogi törvények betartása, különösen a felhasználói tartalmak és adatok kezelése során.
+
+## 6. Jelenlegi üzleti folyamatok modellje
+
+A TimeFlow Solutions jelenlegi üzleti folyamatai nem tartalmaznak saját fejlesztésű szoftvermegoldást az időgazdálkodás optimalizálására. Az ügyfelek időbeosztásuk szervezésére jelenleg külső alkalmazásokat és manuális módszereket használnak. Ez az időigényes folyamat nem biztosít kellő rugalmasságot, és a hatékonyság mérésére sem áll rendelkezésre megfelelő eszköz. Az új Pomodoro alkalmazás bevezetésével a TimeFlow Solutions saját megoldást nyújthat, amely jobban integrálható az ügyfelek napi folyamataiba, lehetővé téve az időgazdálkodás központosított, elemzéseken alapuló nyomon követését és javítását.
