@@ -30,14 +30,14 @@ A TimeFlow Solutions által fejlesztett új rendszer egy reszponzív Pomodoro id
 
 A jelenlegi üzleti folyamatok alapján a felhasználók általában manuálisan követik nyomon a feladataikat és az elvégzett munkameneteket, vagy más, kevésbé hatékony szoftvereket használnak. Ezek a megoldások nem biztosítanak megfelelő statisztikai adatokat, nem reszponzívak, és a felhasználói élmény gyakran elmarad a várttól. A TimeFlow Solutions által fejlesztett alkalmazás automatizálja és integrálja a feladatkövetést a Pomodoro módszerrel, ezáltal csökkentve a manuális munka és az elhanyagolt feladatok számát.
 
-7. Követelménylista
+## 7. Követelménylista
 
-Intuitív felhasználói felület: Egyszerű, könnyen kezelhető UI, amely minimalizálja a tanulási időt.
-Reszponzivitás: A webalkalmazás különféle eszközökön, például mobilon és asztali számítógépen is jól használható legyen.
-Időzítő testreszabása: A felhasználók állíthassák be a Pomodoro ciklusok időtartamát az egyedi igényeik szerint.
-Statisztikák és elemzések: Részletes visszajelzést nyújt a felhasználói teljesítményről, megjelenítve a munkameneteket.
-Adatvédelem és biztonság: A rendszer biztosítsa a felhasználói adatok védelmét a GDPR szerint.
-Exportálás: Statisztikai adatok exportálása különböző formátumokban, például CSV-ben vagy PDF-ben.
+- Intuitív felhasználói felület: Egyszerű, könnyen kezelhető UI, amely minimalizálja a tanulási időt.
+- Reszponzivitás: A webalkalmazás különféle eszközökön, például mobilon és asztali számítógépen is jól használható legyen.
+- Időzítő testreszabása: A felhasználók állíthassák be a Pomodoro ciklusok időtartamát az egyedi igényeik szerint.
+- Statisztikák és elemzések: Részletes visszajelzést nyújt a felhasználói teljesítményről, megjelenítve a munkameneteket.
+- Adatvédelem és biztonság: A rendszer biztosítsa a felhasználói adatok védelmét a GDPR szerint.
+- Exportálás: Statisztikai adatok exportálása különböző formátumokban, például CSV-ben vagy PDF-ben.
 
 8. Fogalomtár
 
