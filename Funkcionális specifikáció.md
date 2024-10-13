@@ -30,3 +30,11 @@ A rendszer működése során figyelembe kell venni a vonatkozó adatvédelmi é
 ## 6. Jelenlegi üzleti folyamatok modellje
 
 A TimeFlow Solutions jelenlegi üzleti folyamatai nem tartalmaznak saját fejlesztésű szoftvermegoldást az időgazdálkodás optimalizálására. Az ügyfelek időbeosztásuk szervezésére jelenleg külső alkalmazásokat és manuális módszereket használnak. Ez az időigényes folyamat nem biztosít kellő rugalmasságot, és a hatékonyság mérésére sem áll rendelkezésre megfelelő eszköz. Az új Pomodoro alkalmazás bevezetésével a TimeFlow Solutions saját megoldást nyújthat, amely jobban integrálható az ügyfelek napi folyamataiba, lehetővé téve az időgazdálkodás központosított, elemzéseken alapuló nyomon követését és javítását.
+
+7. Követelménylista
+
+Intuitív felhasználói felület: Könnyen használható, tiszta, és reszponzív dizájn, amely bármilyen eszközön működik.
+Pomodoro időzítő testreszabása: A felhasználók egyedi időzítési beállításokat alkalmazhatnak, személyre szabva a munkameneteket és a szüneteket.
+Feladatmenedzsment: Integrált feladatkezelési rendszer, amely segít a feladatok nyomon követésében és priorizálásában.
+Statisztikai modul: A felhasználók teljesítményének követése részletes statisztikákkal és elemzésekkel, amelyek megmutatják a munkamenetek hatékonyságát.
+Adatbiztonság és megfelelés: Az alkalmazás teljes mértékben megfelel az adatvédelmi előírásoknak, és biztosítja a felhasználók adatainak védelmét.
