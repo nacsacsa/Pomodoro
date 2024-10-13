@@ -33,8 +33,8 @@ A TimeFlow Solutions jelenlegi üzleti folyamatai nem tartalmaznak saját fejles
 
 ## 7. Követelménylista
 
-Intuitív felhasználói felület: Könnyen használható, tiszta, és reszponzív dizájn, amely bármilyen eszközön működik.
-Pomodoro időzítő testreszabása: A felhasználók egyedi időzítési beállításokat alkalmazhatnak, személyre szabva a munkameneteket és a szüneteket.
-Feladatmenedzsment: Integrált feladatkezelési rendszer, amely segít a feladatok nyomon követésében és priorizálásában.
-Statisztikai modul: A felhasználók teljesítményének követése részletes statisztikákkal és elemzésekkel, amelyek megmutatják a munkamenetek hatékonyságát.
-Adatbiztonság és megfelelés: Az alkalmazás teljes mértékben megfelel az adatvédelmi előírásoknak, és biztosítja a felhasználók adatainak védelmét.
+- Intuitív felhasználói felület: Könnyen használható, tiszta, és reszponzív dizájn, amely bármilyen eszközön működik.
+- Pomodoro időzítő testreszabása: A felhasználók egyedi időzítési beállításokat alkalmazhatnak, személyre szabva a munkameneteket és a szüneteket.
+- Feladatmenedzsment: Integrált feladatkezelési rendszer, amely segít a feladatok nyomon követésében és priorizálásában.
+- Statisztikai modul: A felhasználók teljesítményének követése részletes statisztikákkal és elemzésekkel, amelyek megmutatják a munkamenetek hatékonyságát.
+- Adatbiztonság és megfelelés: Az alkalmazás teljes mértékben megfelel az adatvédelmi előírásoknak, és biztosítja a felhasználók adatainak védelmét.
