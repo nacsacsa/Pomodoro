@@ -38,3 +38,11 @@ A TimeFlow Solutions jelenlegi üzleti folyamatai nem tartalmaznak saját fejles
 - Feladatmenedzsment: Integrált feladatkezelési rendszer, amely segít a feladatok nyomon követésében és priorizálásában.
 - Statisztikai modul: A felhasználók teljesítményének követése részletes statisztikákkal és elemzésekkel, amelyek megmutatják a munkamenetek hatékonyságát.
 - Adatbiztonság és megfelelés: Az alkalmazás teljes mértékben megfelel az adatvédelmi előírásoknak, és biztosítja a felhasználók adatainak védelmét.
+
+## 8. Fogalomtár
+
+- Pomodoro technika: Egy időgazdálkodási módszer, amely rövid, 25 perces munkameneteket váltogat rövid szünetekkel, növelve a hatékonyságot.
+- GDPR: Az Európai Unió adatvédelmi szabályozása, amely az egyének személyes adatainak védelmére vonatkozik.
+- Reszponzív dizájn: Olyan webes felület, amely minden eszközön megfelelően működik, különösen mobil- és asztali eszközökön.
+- Feladatkezelés: Az alkalmazás azon funkciója, amely lehetővé teszi a felhasználóknak, hogy nyomon kövessék, szervezzék és priorizálják a feladataikat.
+- Statisztikai modul: Az a rendszerkomponens, amely elemzi és megjeleníti a felhasználók teljesítményére vonatkozó adatokat.
