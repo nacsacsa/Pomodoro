@@ -39,10 +39,10 @@ A jelenlegi üzleti folyamatok alapján a felhasználók általában manuálisan
 - Adatvédelem és biztonság: A rendszer biztosítsa a felhasználói adatok védelmét a GDPR szerint.
 - Exportálás: Statisztikai adatok exportálása különböző formátumokban, például CSV-ben vagy PDF-ben.
 
-8. Fogalomtár
+## 8. Fogalomtár
 
-Pomodoro technika: Időgazdálkodási módszer, amely 25 perces munkamenetekre és rövid szünetekre épít.
-GDPR: Az EU adatvédelmi rendelete, amely biztosítja a felhasználók személyes adatainak védelmét.
-Reszponzív dizájn: Olyan webalkalmazás, amely különböző képernyőméreteken megfelelően működik.
-CSV: Olyan szöveg alapú fájlformátum, amely sorokat és oszlopokat használ az adatok táblázatba szervezésére.
-Feladatkezelés: Az a folyamat, amikor a felhasználók feladatokat hoznak létre, rendszereznek, és követnek.
+- Pomodoro technika: Időgazdálkodási módszer, amely 25 perces munkamenetekre és rövid szünetekre épít.
+- GDPR: Az EU adatvédelmi rendelete, amely biztosítja a felhasználók személyes adatainak védelmét.
+- Reszponzív dizájn: Olyan webalkalmazás, amely különböző képernyőméreteken megfelelően működik.
+- CSV: Olyan szöveg alapú fájlformátum, amely sorokat és oszlopokat használ az adatok táblázatba szervezésére.
+- Feladatkezelés: Az a folyamat, amikor a felhasználók feladatokat hoznak létre, rendszereznek, és követnek.
