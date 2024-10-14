@@ -2,6 +2,11 @@
 
 A **TimeFlow Solutions** megbízásából egy Pomodoro technikán alapuló webalkalmazás fejlesztése a cél, amely hatékony időgazdálkodási eszközt nyújt felhasználók számára. A Pomodoro technika lényege, hogy rövid, 25 perces időblokkokban dolgozik a felhasználó, amit egy rövid szünet követ, majd minden negyedik blokk után hosszabb pihenőt vehet. Az alkalmazás segíti a munkafolyamatok tervezését, a hatékonyság növelését, valamint a feladatok nyomon követését. A rendszer alapvető célja egy olyan könnyen használható és hozzáférhető platform létrehozása, amely mobil és asztali eszközökön is elérhető, és integrálható más produktivitást támogató alkalmazásokkal, mint például Google Calendar vagy Trello. Az alkalmazás személyre szabható Pomodoro időzítőket kínál, statisztikai áttekintést biztosít a felhasználói teljesítményről, és motiváló visszajelzéseket nyújt a produktív időszakok sikeres lezárásakor.  
 
+## 2. Projektterv  
+
+A projekt három hónapra van tervezve, négy fő fázisra bontva: **tervezés**, **fejlesztés**, **tesztelés** és **átadás**. A projektben négy fejlesztői szerepkör vesz részt: frontend fejlesztő, backend fejlesztő, UX/UI designer és tesztelő. A tervezés fázisa két hétig tart, amely során a rendszerterv, az adatbázis és a funkcionális specifikációk kerülnek kidolgozásra. A fejlesztés szakasza négy hétig tart, amely alatt a frontend és backend modulok integrálása, valamint az adatbázis létrehozása történik. A tesztelési fázisban két hét alatt az alkalmazás hibajavítása, optimalizálása és felhasználói tesztelése valósul meg. A projekt végső két hetében az átadás és dokumentáció kerül sorra, valamint a kliens számára történő átadási fázis. A fejlesztés agilis módszertan szerint halad, ahol két hetes sprintek biztosítják a folyamatos visszacsatolást és iteratív fejlesztést.
+
+### 3. Üzleti folyamatok modellje  
 
 ## 3. Üzleti folyamatok modellje
 
