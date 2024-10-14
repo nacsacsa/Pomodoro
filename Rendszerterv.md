@@ -1,3 +1,5 @@
+# Rendszerterv – Pomodoro Webalkalmazás
+
 ## 1. A rendszer célja    
 
 A **TimeFlow Solutions** megbízásából egy Pomodoro technikán alapuló webalkalmazás fejlesztése a cél, amely hatékony időgazdálkodási eszközt nyújt felhasználók számára. A Pomodoro technika lényege, hogy rövid, 25 perces időblokkokban dolgozik a felhasználó, amit egy rövid szünet követ, majd minden negyedik blokk után hosszabb pihenőt vehet. Az alkalmazás segíti a munkafolyamatok tervezését, a hatékonyság növelését, valamint a feladatok nyomon követését. A rendszer alapvető célja egy olyan könnyen használható és hozzáférhető platform létrehozása, amely mobil és asztali eszközökön is elérhető, és integrálható más produktivitást támogató alkalmazásokkal, mint például Google Calendar vagy Trello. Az alkalmazás személyre szabható Pomodoro időzítőket kínál, statisztikai áttekintést biztosít a felhasználói teljesítményről, és motiváló visszajelzéseket nyújt a produktív időszakok sikeres lezárásakor.  
