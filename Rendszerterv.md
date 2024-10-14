@@ -39,3 +39,8 @@ A Pomodoro webalkalmazás egy felhőalapú infrastruktúrán fog futni az AWS sz
 - Az adatbázist egy AWS RDS MySQL szolgáltatás biztosítja, amely automatikusan menti és kezeli a felhasználói adatokat.
   - A fejlesztői környezetben Docker konténereket használunk a lokális fejlesztési és tesztelési feladatok egyszerűbb kezelése érdekében.
   - A rendszer folyamatos integrációját és szállítását (CI/CD) az AWS CodePipeline támogatja.
+
+## 7. Architekturális terv  
+
+Az alkalmazás n-tier architektúrában működik, külön választva a felhasználói interfészt (frontend), az üzleti logikát (backend) és az adatkezelést (adatbázis). A frontend része egy React-alapú webalkalmazás, amely az AWS S3 és CloudFront segítségével kerül tárolásra és kiszolgálásra. Az üzleti logika egy RESTful API-n keresztül kommunikál a frontenddel, amelyet Java és Spring Boot keretrendszerrel fejlesztünk, és az AWS Lambda szolgáltatásai futtatnak. Ez az architektúra lehetővé teszi a skálázható, kiszolgálómentes működést, amely nagy terhelés alatt is képes optimális teljesítményt nyújtani. Az API összekapcsolódik egy MySQL-alapú adatbázissal, amelyet az AWS RDS szolgáltatás kezel, biztosítva
+a gyors adattárolást és lekérdezést. A rendszer alapvető része a felhasználói hitelesítés és jogosultságkezelés, amelyet JWT (JSON Web Token) technológiával valósítunk meg.
