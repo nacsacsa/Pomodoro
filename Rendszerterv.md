@@ -44,3 +44,13 @@ A Pomodoro webalkalmazás egy felhőalapú infrastruktúrán fog futni az AWS sz
 
 Az alkalmazás n-tier architektúrában működik, külön választva a felhasználói interfészt (frontend), az üzleti logikát (backend) és az adatkezelést (adatbázis). A frontend része egy React-alapú webalkalmazás, amely az AWS S3 és CloudFront segítségével kerül tárolásra és kiszolgálásra. Az üzleti logika egy RESTful API-n keresztül kommunikál a frontenddel, amelyet Java és Spring Boot keretrendszerrel fejlesztünk, és az AWS Lambda szolgáltatásai futtatnak. Ez az architektúra lehetővé teszi a skálázható, kiszolgálómentes működést, amely nagy terhelés alatt is képes optimális teljesítményt nyújtani. Az API összekapcsolódik egy MySQL-alapú adatbázissal, amelyet az AWS RDS szolgáltatás kezel, biztosítva
 a gyors adattárolást és lekérdezést. A rendszer alapvető része a felhasználói hitelesítés és jogosultságkezelés, amelyet JWT (JSON Web Token) technológiával valósítunk meg.
+
+## 8. Adatbázis modell   
+
+Az adatbázis a rendszer kulcsfontosságú eleme, amely a felhasználói fiókokat, Pomodoro munkameneteket, feladatokat és statisztikákat tárolja. Az adatbázis relációs modellként épül fel MySQL alapokon, ahol a fő entitások a következők:  
+Users: A felhasználói adatokat (név, e-mail, jelszó) tárolja.  
+Tasks: A feladatokat tárolja, kapcsolódik a felhasználókhoz, és tartalmazza a feladat nevét, leírását, határidejét.  
+Pomodoro Sessions: A felhasználók által végrehajtott Pomodoro időszakokat rögzíti, tárolva a kezdési és befejezési időt, valamint a kapcsolódó feladatot.  
+Statistics: A felhasználói aktivitást gyűjti össze, például a végrehajtott Pomodoro munkamenetek számát, az összesített időt, és az eredményeket.
+
+Az entitások közötti kapcsolatok segítségével a rendszer képes gyors lekérdezéseket végezni a felhasználói statisztikák és feladatok állapotának megjelenítéséhez.
