@@ -47,6 +47,8 @@ a gyors adattárolást és lekérdezést. A rendszer alapvető része a felhaszn
 
 ## 8. Adatbázis modell   
 
+![](Projekt/Képek/AdatbázisModell.png)
+
 Az adatbázis a rendszer kulcsfontosságú eleme, amely a felhasználói fiókokat, Pomodoro munkameneteket, feladatokat és statisztikákat tárolja. Az adatbázis relációs modellként épül fel MySQL alapokon, ahol a fő entitások a következők:  
 - **Users**: A felhasználói adatokat (név, e-mail, jelszó) tárolja.  
 - **Tasks**: A feladatokat tárolja, kapcsolódik a felhasználókhoz, és tartalmazza a feladat nevét, leírását, határidejét.  
