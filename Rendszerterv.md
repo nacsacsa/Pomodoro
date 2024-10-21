@@ -8,6 +8,27 @@ A **TimeFlow Solutions** megbízásából egy Pomodoro technikán alapuló webal
 
 A projekt három hónapra van tervezve, négy fő fázisra bontva: **tervezés**, **fejlesztés**, **tesztelés** és **átadás**. A projektben négy fejlesztői szerepkör vesz részt: frontend fejlesztő, backend fejlesztő, UX/UI designer és tesztelő. A tervezés fázisa két hétig tart, amely során a rendszerterv, az adatbázis és a funkcionális specifikációk kerülnek kidolgozásra. A fejlesztés szakasza négy hétig tart, amely alatt a frontend és backend modulok integrálása, valamint az adatbázis létrehozása történik. A tesztelési fázisban két hét alatt az alkalmazás hibajavítása, optimalizálása és felhasználói tesztelése valósul meg. A projekt végső két hetében az átadás és dokumentáció kerül sorra, valamint a kliens számára történő átadási fázis. A fejlesztés agilis módszertan szerint halad, ahol két hetes sprintek biztosítják a folyamatos visszacsatolást és iteratív fejlesztést.
 
+### **Projektmunkások és felelőségek:**
+#### **Backend munkálatok:** Kolozsi Márton
+Feldata A háttérfolyamatokat létrehozni
+#### **Frontend munkálatok:** Délczeg Sándor Balázs
+Feladata a frontend kialakítása
+#### **Full stack:** Horog Gabriella, Horog Regina
+Feladatuk a háttérfolyamatok összekötése a kinézettel, adatbázis összekötése a frontendel
+
+### **Ütemterv:**
+| Funckió                   | Feladat                       | Prioritás |
+|---------------------------|-------------------------------|-----------|
+| Követelmény specifikáció  |                               | 0         |
+| Funkcionális specifikáció |                               | 0         |
+| Rendszerterv              |                               | 0         |
+| Model                     | Python script megírása        | 2         |
+| Model                     | Segéd osztályok megírása      | 2         |
+| Felhasználói felület      | Kezdő képernyő kialakítása    | 2         |
+| Felhasználói felület      | Fő képernyő kialakítása       | 2         |
+| Adatbázis                 | Admin felhasználó elkészítése | 3         |
+| Felhasználói felület      | Reszponzivitás                | 3         |
+
 ## 3. Üzleti folyamatok modellje
 
 Az alkalmazás fő célcsoportja az időgazdálkodást és hatékonyságot javítani kívánó egyének és kisvállalkozások, akik a Pomodoro technika révén növelhetik termelékenységüket. A rendszer működési folyamata azzal kezdődik, hogy a felhasználó létrehozza fiókját, majd megadhatja a napi feladatait. A felhasználó egy Pomodoro időszakot indíthat, melynek végén az alkalmazás automatikusan elindítja a szünetet. Minden felhasználó hozzáférhet személyes statisztikákhoz, amelyek megmutatják, mennyi időt töltöttek produktív munkával, illetve pihenéssel. A rendszer lehetővé teszi a feladatok fontossági sorrendbe állítását és azok időzítését a nap különböző időpontjaira. Az adminisztrációs panelen keresztül a rendszergazdák ellenőrizhetik a felhasználói aktivitást és kezelhetik a bejelentett hibákat. Az üzleti folyamatok fontos eleme az is, hogy a felhasználó hozzáadhatja saját jegyzeteit, céljait, és ezeket a rendszer elemzi, visszajelzést adva a haladásról.
