@@ -52,6 +52,7 @@ A Pomodoro alkalmazásnak több fontos követelményt kell teljesítenie.
 ![](Projekt/Képek/Főoldal.png)
 ![](Projekt/Képek/Bejelentkezés.png)
 ![](Projekt/Képek/Beállítások.png)
+
 A Pomodoro alkalmazás fő funkciói között szerepel az időzítők kezelése, feladatok nyomon követése és statisztikák megjelenítése. A felhasználók a főoldalon Pomodoro időzítőt indíthatnak, ahol a standard 25 perces munkamenetet és 5 perces szünetet alapértelmezésként kínálja a rendszer, de lehetőséget biztosít egyéni időzítők beállítására is. A feladatkezelés modul lehetővé teszi, hogy a felhasználók új feladatokat adjanak hozzá, felosztva azokat több Pomodoro ciklusra. Az alkalmazás a felhasználói fiókokhoz kapcsolódó adatokat felhasználói profilon belül tárolja, ahol a statisztikai adatok megtekinthetők, például az egyes napokon végrehajtott Pomodoro szám, a szünetek időtartama és a teljesített feladatok listája. Az alkalmazás push értesítésekkel és e-mail értesítésekkel is támogatja a felhasználót, hogy mindig tudatában legyen a következő munkamenetnek vagy szünetnek.
 
 ## 6. Fizikai környezet
