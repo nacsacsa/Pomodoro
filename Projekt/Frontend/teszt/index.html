@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Timer</h1>
+        <nav>
+            <a href="#pomodoro" onclick="selectMode('pomodoro')" id="pomodoroLink">Pomodoro</a>
+            <a href="#short-break" onclick="selectMode('short-break')" id="shortBreakLink">Short Break</a>
+            <a href="#long-break" onclick="selectMode('long-break')" id="longBreakLink">Long Break</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="timer-display">
+            <h2 id="modeTitle">Pomodoro</h2>
+            <div id="timeDisplay">25:00</div>
+            <button onclick="startTimer()">START</button>
+            <button onclick="stopTimer()">STOP</button>
+        </div>
+
+        <div class="task-container">
+            <h3>Tasks</h3>
+            <div id="tasksContainer">
+                <div class="task">
+                    <span id="taskName">Sample Task</span>
+                    <button onclick="showEditTaskPrompt('Sample Task')">⋮</button>
+                </div>
+                <button class="add-task-btn" onclick="addTask()">+ Add Task</button>
+            </div>
+        </div>
+    </main>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
