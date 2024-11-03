@@ -119,3 +119,12 @@ function handleSessionEnd(){
     selectMode(mode);
     startTimer();
 }
+
+function skipSession() {
+    stopTimer();
+    handleSessionEnd();
+
+    const skipSound = document.getElementById("skipSound");
+    skipSound.volume = window.volume;
+    skipSound.play();
+}
