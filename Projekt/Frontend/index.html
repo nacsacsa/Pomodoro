@@ -16,20 +16,18 @@
         </div>
     </header>
 <main>
-    <div>
-        <div class="timer">
-            <div class="timer-controls">
-                <button>Pomodoro</button>
-                <button>Rövid szünet</button>
-                <button>Hosszú szünet</button>
-            </div>
-
-            <button id="start-button" style="font-size: 20px; padding: 10px 20px; cursor: pointer;">Kezdés</button>
-
-            <div class="task-list">
-                <h2>Feladat</h2>
-                <button class="add-task">+ Feladat hozzáadása</button>
-            </div>
+    <div class="timer-display">
+        <nav class="mode-switch">
+            <a id="pomodoroLink">Pomodoro</a>
+            <a id="short-breakLink">Rövid Szünet</a>
+            <a id="long-breakLink">Hosszú Szünet</a>
+        </nav>
+        <h2 id="modeTitle">Pomodoro</h2>
+        <div id="timeDisplay">25:00</div>
+        <button id="toggleButton">KEZDÉS</button>
+        <div class="task-list">
+            <h2>Feladat</h2>
+            <button class="add-task">+ Feladat hozzáadása</button>
         </div>
     </div>
 </main>
