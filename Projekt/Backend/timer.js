@@ -63,3 +63,11 @@ function updateTitle() {
         document.title = `${timeString} - Ideje pihenni`;
     }
 }
+
+function toggleTimer() {
+    if (isTimerRunning) {
+        stopTimer();
+    } else {
+        startTimer();
+    }
+}
