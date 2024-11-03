@@ -10,3 +10,8 @@ function addTask(){
         document.getElementById("tasksContainer").insertBefore(taskContainer, document.getElementById("tasksContainer").lastElementChild);
     }
 }
+
+function deleteTask(deleteButton) {
+    const task = deleteButton.parentElement;
+    task.remove();
+}
