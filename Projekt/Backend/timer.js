@@ -13,3 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
     updateDisplay();
     updateSkipButtonVisibility();
 });
+
+function updateDisplay() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    document.getElementById("timeDisplay").textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    updateTitle();
+}
