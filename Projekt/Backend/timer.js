@@ -71,3 +71,25 @@ function toggleTimer() {
         startTimer();
     }
 }
+
+function startTimer() {
+    clearInterval(timer);
+    isTimerRunning = true;
+    document.getElementById("toggleButton").textContent = "ÁLLJ";
+    document.getElementById("skipButton").style.display = "inline-block";
+
+    timer = setInterval(() => {
+        if (timeLeft < 5 && timeLeft > 0) {
+            playTickingSound();
+        }
+
+        if (timeLeft > 0) {
+            timeLeft--;
+            updateDisplay();
+        } else {
+            clearInterval(timer);
+            playAlarmSound();
+            handleSessionEnd();
+        }
+    }, 1000);
+}
