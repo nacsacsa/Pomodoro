@@ -40,3 +40,24 @@ input[type="password"]:focus {
     border-color: #ff6b6b;
     outline: none;
 }
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff4b4b;
+}
+
+button:active {
+    background-color: #ff3333;
+}
