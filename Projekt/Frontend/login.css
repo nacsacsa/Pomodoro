@@ -26,6 +26,12 @@ h2 {
     text-align: center;
 }
 
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
 input[type="email"], input[type="password"] {
     width: 90%;
     padding: 10px;
@@ -91,4 +97,15 @@ button:active {
 
 .guest-button button:active {
     background-color: #ff3333;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+        height: 80vh;
+    }
+
+    .container {
+        padding: 15px;
+    }
 }
