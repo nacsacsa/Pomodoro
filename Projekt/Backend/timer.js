@@ -128,3 +128,12 @@ function skipSession() {
     skipSound.volume = window.volume;
     skipSound.play();
 }
+
+function updateSkipButtonVisibility() {
+    const skipButton = document.getElementById("skipButton");
+    if (isTimerRunning) {
+        skipButton.style.display = "inline-block";
+    } else {
+        skipButton.style.display = "none";
+    }
+}
