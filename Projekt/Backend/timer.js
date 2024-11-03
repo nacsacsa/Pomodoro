@@ -93,3 +93,10 @@ function startTimer() {
         }
     }, 1000);
 }
+
+function stopTimer() {
+    clearInterval(timer);
+    isTimerRunning = false;
+    document.getElementById("toggleButton").textContent = "FOLYTATÁS";
+    document.getElementById("skipButton").style.display = "none";
+}
