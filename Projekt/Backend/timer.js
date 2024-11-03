@@ -100,3 +100,22 @@ function stopTimer() {
     document.getElementById("toggleButton").textContent = "FOLYTATÁS";
     document.getElementById("skipButton").style.display = "none";
 }
+
+function handleSessionEnd(){
+    if (mode === 'pomodoro') {
+        pomodoroCount++;
+        if (pomodoroCount === longBreakInterval) {
+            mode = 'long-break';
+            timeLeft = timeSettings[mode];
+            pomodoroCount = 0;
+        } else {
+            mode = 'short-break';
+            timeLeft = timeSettings[mode];
+        }
+    } else {
+        mode = 'pomodoro';
+        timeLeft = timeSettings[mode];
+    }
+    selectMode(mode);
+    startTimer();
+}
