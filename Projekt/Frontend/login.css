@@ -61,3 +61,34 @@ button:hover {
 button:active {
     background-color: #ff3333;
 }
+
+.redirect-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.guest-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.guest-button button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.guest-button button:hover {
+    background-color: #ff4b4b;
+}
+
+.guest-button button:active {
+    background-color: #ff3333;
+}
