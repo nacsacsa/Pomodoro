@@ -29,3 +29,15 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
