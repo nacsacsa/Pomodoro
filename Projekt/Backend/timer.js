@@ -51,3 +51,15 @@ function selectMode(selectedMode) {
     updateTitle();
     updateSkipButtonVisibility();
 }
+
+function updateTitle() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    const timeString = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+    if (mode === 'pomodoro') {
+        document.title = `${timeString} - Ideje fókuszálni`;
+    } else {
+        document.title = `${timeString} - Ideje pihenni`;
+    }
+}
