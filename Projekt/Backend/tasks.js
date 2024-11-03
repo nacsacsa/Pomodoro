@@ -11,6 +11,16 @@ function addTask(){
     }
 }
 
+function updateTask(taskElement, oldTaskName) {
+    const newTaskName = taskElement.textContent.trim();
+    const tasks = document.querySelectorAll(".task span");
+    tasks.forEach(task => {
+        if (task.textContent === oldTaskName) {
+            task.textContent = newTaskName;
+        }
+    });
+}
+
 function deleteTask(deleteButton) {
     const task = deleteButton.parentElement;
     task.remove();
