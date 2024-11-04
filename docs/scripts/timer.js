@@ -78,6 +78,11 @@ function startTimer() {
     document.getElementById("toggleButton").textContent = "ÁLLJ";
     document.getElementById("skipButton").style.display = "inline-block";
 
+    if (timeLeft > 0) {
+        timeLeft--;
+        updateDisplay();
+    }
+
     timer = setInterval(() => {
         if (timeLeft < 5 && timeLeft > 0) {
             playTickingSound();
