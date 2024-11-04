@@ -94,6 +94,12 @@ function startTimer() {
     }, 1000);
 }
 
+function playTickingSound() {
+    const tickingSound = document.getElementById("tickingSound");
+    tickingSound.volume = window.volume;
+    tickingSound.play();
+}
+
 function stopTimer() {
     clearInterval(timer);
     isTimerRunning = false;
@@ -118,6 +124,14 @@ function handleSessionEnd(){
     }
     selectMode(mode);
     startTimer();
+}
+
+function playAlarmSound() {
+    const alarmSound = document.getElementById("alarmSound").value;
+    const soundEffect = document.getElementById(`alert${alarmSound.charAt(0).toUpperCase() + alarmSound.slice(1)}`);
+    soundEffect.currentTime = 0;
+    soundEffect.volume = window.volume;
+    soundEffect.play();
 }
 
 function skipSession() {
