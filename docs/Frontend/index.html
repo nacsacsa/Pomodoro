@@ -22,9 +22,9 @@
 <main>
     <div class="timer-display">
         <nav class="mode-switch">
-            <a id="pomodoroLink">Pomodoro</a>
-            <a id="short-breakLink">Rövid Szünet</a>
-            <a id="long-breakLink">Hosszú Szünet</a>
+            <a id="pomodoroLink" onclick="selectMode('pomodoro')">Pomodoro</a>
+            <a id="short-breakLink" onclick="selectMode('short-break')">Rövid Szünet</a>
+            <a id="long-breakLink" onclick="selectMode('long-break')">Hosszú Szünet</a>
         </nav>
         <h2 id="modeTitle">Pomodoro</h2>
         <div id="timeDisplay">25:00</div>

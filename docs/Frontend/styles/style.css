@@ -30,6 +30,19 @@ main {
     padding: 20px;
 }
 
+.pomodoro-mode {
+    background-color: #e74c3c;
+}
+
+.short-break-mode {
+    background-color: #3498db;
+}
+
+.long-break-mode {
+    background-color: #2ecc71;
+}
+
+
 .navbar {
     display: flex;
     justify-content: center;
