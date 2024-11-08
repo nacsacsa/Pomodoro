@@ -55,6 +55,18 @@ main {
     z-index: 10;
 }
 
+.pomodoro-navbar {
+    background-color: #a52c24;
+}
+
+.short-break-navbar {
+    background-color: #2c7b9a;
+}
+
+.long-break-navbar {
+    background-color: #27ae60;
+}
+
 .timer-display {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
