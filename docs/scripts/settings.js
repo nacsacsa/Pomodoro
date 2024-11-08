@@ -32,3 +32,16 @@ function updateTimeSettings(){
 
     updateDisplay();
 }
+
+function applySettings() {
+    const alarmSound = document.getElementById("alarmSound").value;
+    const volume = document.getElementById("volumeControl").value;
+    window.volume = volume / 100;
+    updateTimeSettings();
+
+    console.log({
+        longBreakInterval,
+        alarmSound,
+        volume: window.volume
+    });
+}
