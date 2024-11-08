@@ -88,3 +88,23 @@ function toggleDropdown() {
     const dropdown = document.getElementById("dropdownMenu");
     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 }
+
+document.addEventListener('click', function (event) {
+    const dropdown = document.getElementById("dropdownMenu");
+    const button = document.getElementById("menuButton");
+    if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+        dropdown.style.display = 'none';
+    }
+});
+
+const alertSounds = {
+    bell: 'static/sounds/Bell.m4a', digital: 'static/sounds/Digital.m4a', kitchen: 'static/sounds/Kitchen.m4a'
+};
+
+function playAlertSound() {
+    const selectedSound = document.getElementById("alarmSound").value;
+    const volume = document.getElementById("volumeControl").value / 100;
+    const audio = new Audio(alertSounds[selectedSound]);
+    audio.volume = volume;
+    audio.play();
+}
