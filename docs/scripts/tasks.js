@@ -37,3 +37,11 @@ function skipSound() {
     skipSound.volume = window.volume;
     skipSound.play();
 }
+
+module.exports = {
+    addTask,
+    updateTask,
+    deleteTask,
+    playSound,
+    skipSound
+};
