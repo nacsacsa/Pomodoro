@@ -50,7 +50,12 @@ session_start();
         <audio id="alertDigital" src="../static/sounds/Digital.m4a" preload="auto"></audio>
         <audio id="skipSound" src="../static/sounds/Skip.m4a" preload="auto"></audio>
     </div>
-
+    <div class="task-container">
+        <h3>Feladatok</h3>
+        <div id="tasksContainer">
+            <button class="add-task-btn" onclick="addTask()">+ Feladat hozzáadása</button>
+        </div>
+    </div>
 </main>
 </body>
 </html>
