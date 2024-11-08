@@ -108,3 +108,13 @@ function playAlertSound() {
     audio.volume = volume;
     audio.play();
 }
+
+module.exports = {
+    openSettings,
+    closeSettings,
+    saveSettings,
+    updateTimeSettings,
+    applySettings,
+    toggleDropdown,
+    playAlertSound
+};
