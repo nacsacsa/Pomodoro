@@ -166,3 +166,24 @@ button:hover {
     margin: 5px 0;
     border-radius: 5px;
 }
+
+#toggleButton {
+    margin: 20px 0;
+}
+
+#skipButton {
+    font-size: 2.3em;
+    border: none;
+    box-shadow: none;
+}
+
+#skipButton:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#skipButton:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
