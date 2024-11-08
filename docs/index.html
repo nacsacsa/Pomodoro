@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/timer.js"></script>
     <script src="scripts/tasks.js"></script>
+    <audio id="soundEffect" src="sounds/Click.m4a" preload="auto"></audio>
+    <audio id="tickingSound" src="sounds/Tick.m4a" preload="auto"></audio>
+    <audio id="alertBell" src="sounds/Bell.m4a" preload="auto"></audio>
+    <audio id="alertKitchen" src="sounds/Kitchen.m4a" preload="auto"></audio>
+    <audio id="alertDigital" src="sounds/Digital.m4a" preload="auto"></audio>
+    <audio id="skipSound" src="sounds/Skip.m4a" preload="auto"></audio>
     <title>Pomodoro Timer</title>
 </head>
 <body>
@@ -29,8 +35,8 @@
         </nav>
         <h2 id="modeTitle">Pomodoro</h2>
         <div id="timeDisplay">25:00</div>
-        <button onclick="toggleTimer();" id="toggleButton">KEZDÉS</button>
-        <button class="btn btn-outline-light" onclick="skipSession();" id="skipButton">
+        <button onclick="toggleTimer(); playSound();" id="toggleButton">KEZDÉS</button>
+        <button class="btn btn-outline-light" onclick="skipSession(); skipSound();" id="skipButton">
             <i class="bi bi-skip-end-fill"></i>
         </button>
     </div>
@@ -84,8 +90,8 @@
                     <div id="volumeValue" class="volume-display">50%</div>
                 </label>
                 <div class="settings-buttons">
-                    <button id="playAlertButton">Lejátszás</button>
-                    <button class="save-button">Mentés</button>
+                    <button id="playAlertButton" onclick="playAlertSound()">Lejátszás</button>
+                    <button onclick="saveSettings()" class="save-button">Mentés</button>
                 </div>
             </div>
         </div>
