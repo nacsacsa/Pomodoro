@@ -57,5 +57,7 @@ session_start();
         </div>
     </div>
 </main>
+
+<script src="../scripts/settings.js"></script> 
 </body>
 </html>
