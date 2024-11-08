@@ -7,3 +7,7 @@ function closeSettings() {
     applySettings();
     document.getElementById("settingsModal").style.display = "none";
 }
+
+function saveSettings() {
+    closeSettings();
+}
