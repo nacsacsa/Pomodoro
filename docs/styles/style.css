@@ -120,6 +120,12 @@ main {
     margin-top: 20px;
 }
 
+#timeDisplay {
+    font-size: 10em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
 button {
     background-color: white;
     color: #333;
