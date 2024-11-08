@@ -229,3 +229,10 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     color: #333;
     text-align: left;
 }
+
+.settings-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
