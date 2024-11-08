@@ -31,3 +31,9 @@ function playSound() {
     playsound.volume = window.volume;
     playsound.play();
 }
+
+function skipSound() {
+    const skipSound = document.getElementById("skipSound");
+    skipSound.volume = window.volume;
+    skipSound.play();
+}
