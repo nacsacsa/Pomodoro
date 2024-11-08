@@ -45,3 +45,41 @@ function applySettings() {
         volume: window.volume
     });
 }
+
+window.onclick = function (event) {
+    const modal = document.getElementById("settingsModal");
+    if (event.target === modal) {
+        closeSettings();
+    }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+    const volumeControl = document.getElementById("volumeControl");
+    const pomodoroInput = document.getElementById("pomodoroTime");
+    const shortBreakInput = document.getElementById("shortBreakTime");
+    const longBreakInput = document.getElementById("longBreakTime");
+    const longBreakIntervalInput = document.getElementById("longBreakInterval");
+
+    if (volumeControl) {
+        volumeControl.value = 50;
+        window.volume = volumeControl.value / 100;
+
+        volumeControl.addEventListener("input", function () {
+            const volumeValue = document.getElementById("volumeValue");
+            volumeValue.textContent = this.value + "%";
+
+            window.volume = this.value / 100;
+        });
+    } else {
+        console.error("Volume control element not found");
+    }
+
+    if (pomodoroInput && shortBreakInput && longBreakInput && longBreakIntervalInput) {
+        pomodoroInput.addEventListener("input", updateTimeSettings);
+        shortBreakInput.addEventListener("input", updateTimeSettings);
+        longBreakInput.addEventListener("input", updateTimeSettings);
+        longBreakIntervalInput.addEventListener("input", updateTimeSettings);
+    } else {
+        console.error("One or more input elements not found");
+    }
+});
