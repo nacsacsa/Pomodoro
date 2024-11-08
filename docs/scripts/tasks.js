@@ -25,3 +25,9 @@ function deleteTask(deleteButton) {
     const task = deleteButton.parentElement;
     task.remove();
 }
+
+function playSound() {
+    const playsound = document.getElementById("soundEffect");
+    playsound.volume = window.volume;
+    playsound.play();
+}
