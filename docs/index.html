@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/timer.js"></script>
     <script src="scripts/tasks.js"></script>
+    <script src="scripts/settings.js"></script>
     <audio id="soundEffect" src="sounds/Click.m4a" preload="auto"></audio>
     <audio id="tickingSound" src="sounds/Tick.m4a" preload="auto"></audio>
     <audio id="alertBell" src="sounds/Bell.m4a" preload="auto"></audio>
@@ -22,7 +23,7 @@
 <body>
     <header class="navbar">
         <div class="nav-buttons">
-            <button><i class="bi bi-gear-fill"></i>&nbspBeállítások</button>
+            <button onclick="openSettings()"><i class="bi bi-gear-fill"></i>&nbspBeállítások</button>
             <button><i class="bi bi-person-fill"></i>&nbspRegisztrálás</button>
         </div>
     </header>

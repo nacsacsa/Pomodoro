@@ -203,3 +203,17 @@ button:focus, .nav-buttons a:focus, .mode-switch a:focus {
 button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     background: rgba(255, 255, 255, 0.3);
 }
+
+.settings-modal {
+    display: none;
+    position: fixed;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
