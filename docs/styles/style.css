@@ -91,6 +91,20 @@ main {
     transition: background 0.3s;
 }
 
+.mode-switch {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-buttons a:hover,
+.nav-buttons button:hover,
+.mode-switch a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
 .timer-display {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
