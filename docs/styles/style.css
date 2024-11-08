@@ -99,6 +99,10 @@ main {
     gap: 10px;
 }
 
+.mode-switch a.active {
+    border: 2px solid white;
+}
+
 .nav-buttons a:hover,
 .nav-buttons button:hover,
 .mode-switch a:hover {
