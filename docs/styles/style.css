@@ -217,3 +217,15 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     align-items: center;
     overflow-y: auto;
 }
+
+.settings-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    max-height: 80vh;
+    overflow-y: auto;
+    color: #333;
+    text-align: left;
+}
