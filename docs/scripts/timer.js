@@ -1,5 +1,7 @@
 let timeSettings = {
-    pomodoro: 1500, 'short-break': 300, 'long-break': 900
+    pomodoro: 1500, // 25 perc
+    'short-break': 300, // 5 perc
+    'long-break': 900 // 15 perc
 };
 let timeLeft = timeSettings.pomodoro;
 let timer;
@@ -156,3 +158,13 @@ function updateSkipButtonVisibility() {
         skipButton.style.display = "none";
     }
 }
+
+module.exports = {
+    timeSettings,
+    selectMode,
+    toggleTimer,
+    startTimer,
+    stopTimer,
+    handleSessionEnd,
+    updateDisplay,
+};
