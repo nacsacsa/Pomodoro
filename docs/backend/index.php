@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 ?>
@@ -13,7 +12,6 @@ session_start();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 <header class="navbar">
     <div class="nav-buttons">
@@ -27,7 +25,32 @@ session_start();
         <?php endif; ?>
 
         <button id="menuButton" onclick="toggleDropdown()"><i class="bi bi-three-dots-vertical"></i></button>
+        <div id="dropdownMenu" class="dropdown">
+            <a id="dropdown2" href="calendar.php"><i class="bi bi-calendar"></i>&nbspNaptár</a>
+        </div>
     </div>
 </header>
+<main>
+    <div class="timer-display">
+        <nav class="mode-switch">
+            <a id="pomodoroLink" onclick="selectMode('pomodoro')">Pomodoro</a>
+            <a id="short-breakLink" onclick="selectMode('short-break')">Rövid Szünet</a>
+            <a id="long-breakLink" onclick="selectMode('long-break')">Hosszú Szünet</a>
+        </nav>
+        <h2 id="modeTitle">Pomodoro</h2>
+        <div id="timeDisplay">25:00</div>
+        <button onclick="toggleTimer(); playSound();" id="toggleButton">KEZDÉS</button>
+        <button class="btn btn-outline-light" onclick="skipSession(); skipSound();" id="skipButton">
+            <i class="bi bi-skip-end-fill"></i>
+        </button>
+        <audio id="soundEffect" src="../static/sounds/Click.m4a" preload="auto"></audio>
+        <audio id="tickingSound" src="../static/sounds/Tick.m4a" preload="auto"></audio>
+        <audio id="alertBell" src="../static/sounds/Bell.m4a" preload="auto"></audio>
+        <audio id="alertKitchen" src="../static/sounds/Kitchen.m4a" preload="auto"></audio>
+        <audio id="alertDigital" src="../static/sounds/Digital.m4a" preload="auto"></audio>
+        <audio id="skipSound" src="../static/sounds/Skip.m4a" preload="auto"></audio>
+    </div>
+
+</main>
 </body>
 </html>
