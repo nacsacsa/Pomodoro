@@ -58,6 +58,8 @@ session_start();
     </div>
 </main>
 
-<script src="../scripts/settings.js"></script> 
+<script src="../scripts/settings.js"></script>
+<script src="../scripts/tasks.js"></script>
+
 </body>
 </html>
