@@ -60,6 +60,7 @@ session_start();
 
 <script src="../scripts/settings.js"></script>
 <script src="../scripts/tasks.js"></script>
+<script src="../scripts/timer.js"></script>
 
 </body>
 </html>
