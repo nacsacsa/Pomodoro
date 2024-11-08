@@ -67,6 +67,30 @@ main {
     background-color: #27ae60;
 }
 
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-buttons a,
+.nav-buttons button,
+.mode-switch a {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Eltávolítja az aláhúzást */
+    transition: background 0.3s;
+}
+
 .timer-display {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
