@@ -12,12 +12,14 @@
 <body>
 <div class="container">
     <h2>Bejelentkezés</h2>
-    <form>
+    <form action="backend/login.php" method="POST">
+        <label for="name">NÉV</label>
+        <input type="text" id="name" name="name" placeholder="Felhasználónév" required>
         <label for="email">EMAIL</label>
-        <input type="email" id="email" placeholder="example@mail.com" required>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
         <label for="password">JELSZÓ</label>
-        <input type="password" id="password" placeholder="" required>
-        <button type="submit" class="button">Bejelentlezés</button>
+        <input type="password" id="password" name="password" placeholder="" required>
+        <button type="submit" class="button">Bejelentkezés</button>
     </form>
     <p class="redirect-text">Ha még nincs fiókod, <a href="signUp.html" style="color: #ff6b6b;">itt tudsz regisztrálni</a></p>
     <div class="guest-button">
