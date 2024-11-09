@@ -66,21 +66,26 @@ session_start();
     <div class="settings-content">
         <span class="close" onclick="closeSettings()">&times;</span>
         <h2>Beállítások</h2>
+
         <div class="settings-section">
-        <h3>Időzítő</h3>
-        <label>
-            Pomodoro (perc)
-            <input type="number" id="pomodoroTime" value="25" min="1">
-        </label>
-        <Label>
-            Rövid szünet (perc)
-            <input type="number" id="shortBreakTime" value="5" min="1">
-        </Label>
-        <label>
-            Hosszú Szünet Intervallum
-            <input type="number" id="longBreakInterval" value="4">
-        </label>
-    </div>
+            <h3>Időzítő</h3>
+            <label>
+                Pomodoro (perc)
+                <input type="number" id="pomodoroTime" value="25" min="1">
+            </label>
+            <label>
+                Rövid Szünet (perc)
+                <input type="number" id="shortBreakTime" value="5" min="1">
+            </label>
+            <label>
+                Hosszú Szünet (perc)
+                <input type="number" id="longBreakTime" value="15" min="1">
+            </label>
+            <label>
+                Hosszú Szünet Intervallum
+                <input type="number" id="longBreakInterval" value="4">
+            </label>
+        </div>
         <div class="settings-section">
             <h3>Hang</h3>
             <label>
@@ -102,8 +107,9 @@ session_start();
             </label>
             <div class="settings-buttons">
                 <button id="playAlertButton" onclick="playAlertSound()">Lejátszás</button>
+                <button onclick="saveSettings()" class="save-button">Mentés</button>
             </div>
-        </div
+        </div>
     </div>
 </div>
 </body>
