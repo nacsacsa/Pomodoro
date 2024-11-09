@@ -252,3 +252,11 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     align-items: center;
     padding: 10px 0;
 }
+
+#dropdownMenu a {
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
