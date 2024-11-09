@@ -293,3 +293,12 @@ button, .nav-buttons a, .mode-switch a {
     color: white;
     transition: background 0.3s;
 }
+
+button:focus, .nav-buttons a:focus, .mode-switch a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+button:hover, .nav-buttons a:hover, .mode-switch a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
