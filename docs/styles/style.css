@@ -260,3 +260,16 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     align-items: center;
     justify-content: left;
 }
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    padding: 3px 0;
+}
