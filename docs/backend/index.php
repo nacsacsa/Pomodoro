@@ -76,6 +76,10 @@ session_start();
             Rövid szünet (perc)
             <input type="number" id="shortBreakTime" value="5" min="1">
         </Label>
+        <label>
+            Hosszú Szünet Intervallum
+            <input type="number" id="longBreakInterval" value="4">
+        </label>
     </div>
     </div>
 </div>
