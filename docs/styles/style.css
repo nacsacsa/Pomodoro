@@ -280,3 +280,7 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     text-decoration: none;
     transition: background-color 0.2s, color 0.2s;
 }
+
+#dropdownMenu a:hover {
+    background-color: #ccc;
+}
