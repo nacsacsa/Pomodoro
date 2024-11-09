@@ -62,5 +62,9 @@ session_start();
 <script src="../scripts/tasks.js"></script>
 <script src="../scripts/timer.js"></script>
 
+<div id="settingsModal" class="settings-modal">
+    <div class="settings-content">
+    </div>
+</div>
 </body>
 </html>
