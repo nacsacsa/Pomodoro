@@ -100,6 +100,9 @@ session_start();
                 </div>
                 <div id="volumeValue" class="volume-display">50%</div>
             </label>
+            <div class="settings-buttons">
+                <button id="playAlertButton" onclick="playAlertSound()">Lejátszás</button>
+            </div>
         </div
     </div>
 </div>
