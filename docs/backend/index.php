@@ -62,5 +62,26 @@ session_start();
 <script src="../scripts/tasks.js"></script>
 <script src="../scripts/timer.js"></script>
 
+<div id="settingsModal" class="settings-modal">
+    <div class="settings-content">
+        <span class="close" onclick="closeSettings()">&times;</span>
+        <h2>Beállítások</h2>
+        <div class="settings-section">
+        <h3>Időzítő</h3>
+        <label>
+            Pomodoro (perc)
+            <input type="number" id="pomodoroTime" value="25" min="1">
+        </label>
+        <Label>
+            Rövid szünet (perc)
+            <input type="number" id="shortBreakTime" value="5" min="1">
+        </Label>
+        <label>
+            Hosszú Szünet Intervallum
+            <input type="number" id="longBreakInterval" value="4">
+        </label>
+    </div>
+    </div>
+</div>
 </body>
 </html>

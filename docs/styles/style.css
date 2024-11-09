@@ -268,3 +268,57 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     align-items: center;
     padding: 10px 0;
 }
+
+#dropdownMenu a {
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    padding: 3px 0;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#dropdownMenu a:hover {
+    background-color: #ccc;
+}
+
+button, .nav-buttons a, .mode-switch a {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: background 0.3s;
+}
+
+button:focus, .nav-buttons a:focus, .mode-switch a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+button:hover, .nav-buttons a:hover, .mode-switch a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-buttons {
+    position: relative;
+}
