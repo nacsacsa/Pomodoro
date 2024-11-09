@@ -83,7 +83,14 @@ session_start();
     </div>
         <div class="settings-section">
             <h3>Hang</h3>
-           
+            <label>
+                Riasztó Hang
+                <select id="alarmSound">
+                    <option value="digital">Digitális</option>
+                    <option value="bell">Harang</option>
+                    <option value="kitchen">Konyha</option>
+                </select>
+            </label>
         </div
     </div>
 </div>
