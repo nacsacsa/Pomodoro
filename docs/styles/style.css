@@ -273,3 +273,10 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     color: black;
     padding: 3px 0;
 }
+
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
