@@ -66,7 +66,13 @@ session_start();
     <div class="settings-content">
         <span class="close" onclick="closeSettings()">&times;</span>
         <h2>Beállítások</h2>
-
+        <div class="settings-section">
+        <h3>Időzítő</h3>
+        <label>
+            Pomodoro (perc)
+            <input type="number" id="pomodoroTime" value="25" min="1">
+        </label>
+    </div>
     </div>
 </div>
 </body>
