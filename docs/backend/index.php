@@ -72,6 +72,10 @@ session_start();
             Pomodoro (perc)
             <input type="number" id="pomodoroTime" value="25" min="1">
         </label>
+        <Label>
+            Rövid szünet (perc)
+            <input type="number" id="shortBreakTime" value="5" min="1">
+        </Label>
     </div>
     </div>
 </div>
