@@ -64,6 +64,9 @@ session_start();
 
 <div id="settingsModal" class="settings-modal">
     <div class="settings-content">
+        <span class="close" onclick="closeSettings()">&times;</span>
+        <h2>Beállítások</h2>
+
     </div>
 </div>
 </body>
