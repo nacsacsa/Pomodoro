@@ -81,6 +81,10 @@ session_start();
             <input type="number" id="longBreakInterval" value="4">
         </label>
     </div>
+        <div class="settings-section">
+            <h3>Hang</h3>
+           
+        </div
     </div>
 </div>
 </body>
