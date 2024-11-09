@@ -302,3 +302,7 @@ button:focus, .nav-buttons a:focus, .mode-switch a:focus {
 button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     background: rgba(255, 255, 255, 0.3);
 }
+
+.nav-buttons {
+    position: relative;
+}
