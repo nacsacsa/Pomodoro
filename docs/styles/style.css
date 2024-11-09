@@ -284,3 +284,12 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
 #dropdownMenu a:hover {
     background-color: #ccc;
 }
+
+button, .nav-buttons a, .mode-switch a {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: background 0.3s;
+}
