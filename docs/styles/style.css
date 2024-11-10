@@ -269,6 +269,33 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     padding: 10px 0;
 }
 
+.settings-section input[type="number"],
+.settings-section input[type="range"],
+.settings-section select {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.settings-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.volume-control-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-display {
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 5px;
+}
+
 .save-button,
 #playAlertButton {
     display: block;
