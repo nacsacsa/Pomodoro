@@ -269,6 +269,31 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     padding: 10px 0;
 }
 
+.save-button,
+#playAlertButton {
+    display: block;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #c63737;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover,
+#playAlertButton:hover {
+    background-color: #a52c2c;
+}
+
+#playAlertButton:active {
+    background-color: #388e3c;
+}
+
+
 #dropdownMenu a {
     color: black;
     background-color: white;
