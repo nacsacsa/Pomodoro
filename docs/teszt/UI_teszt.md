@@ -30,3 +30,13 @@
 |  Hosszú szünet idejét a beállításokban átálítjuk 20 percre     |      20:00     |       20:00       |  igen   |    -       |      -     |
 |  Hosszú szünet idejét a beállításokban átálítjuk 1 percre        |     00:01      |      00:01       |  igen    |    -       |      -     |
 |  Pomodoro idejét a beállításokban átálítjuk 30 percre       |     30:00      |      30:00       |   igen  |      -     |       -    |
+
+| Tesztelő:  Délczeg Sándor Balázs | Idő:  2024-11-14 |
+|---------------------------|------------------|
+| Verzió:                   | Kliens:          |
+
+| Teszteset | Várt eredmény | Kapott eredmény | Sikeres | Hibaüzenet | Megjegyzés |
+|------------------------------------------------------------------------------------|---------------|-----------------|---------|------------|------------|
+|  A Feladat hozzáadás gomb után létrehozhatunk egy feladatot "Teszt" néven      |    Teszt       |      Teszt        |   igen  |    -       |      -     |
+|  A "Teszt" feladatot átírhatjuk "Átirt teszt" feladatra      |     Átirt teszt      |      Átirt teszt       |   igen   |    -       |      -     |
+|   A kuka gomb megnyomásával a feladatot törölhetjük     |       igen    |       igen      |  igen   |      -     |       -    |
