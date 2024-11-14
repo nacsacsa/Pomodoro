@@ -19,3 +19,14 @@
 |   Négy pomodor után a hosszú szünetre vált a felület     |    igen       |      igen        |   igen  |    -       |      -     |
 |    Beállítások megnyomásakor előjön a beállítás felület     |     igen      |      igen       |   igen   |    -       |      -     |
 |    Ha a beállítás fül mellé nyomunk akkor bezáródik a beállítások felület    |       igen    |       igen      |  igen   |      -     |       -    |
+
+
+| Tesztelő: Horog Regina | Idő: 2024-11-14 |
+|---------------------------|-----------------|
+| Verzió:                   | Kliens:  |
+
+| Teszteset | Várt eredmény | Kapott eredmény | Sikeres | Hibaüzenet | Megjegyzés |
+|------------------------------------------------------------------------------------|---------------|-----------------|---------|------------|------------|
+|  Hosszú szünet idejét a beállításokban átálítjuk 20 percre     |      20:00     |       20:00       |  igen   |    -       |      -     |
+|  Hosszú szünet idejét a beállításokban átálítjuk 1 percre        |     00:01      |      00:01       |  igen    |    -       |      -     |
+|  Pomodoro idejét a beállításokban átálítjuk 30 percre       |     30:00      |      30:00       |   igen  |      -     |       -    |
