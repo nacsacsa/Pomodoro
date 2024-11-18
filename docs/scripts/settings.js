@@ -98,7 +98,7 @@ document.addEventListener('click', function (event) {
 });
 
 const alertSounds = {
-    bell: 'static/sounds/Bell.m4a', digital: 'static/sounds/Digital.m4a', kitchen: 'static/sounds/Kitchen.m4a'
+    bell: '../sounds/Bell.m4a', digital: '../sounds/Digital.m4a', kitchen: '../sounds/Kitchen.m4a'
 };
 
 function playAlertSound() {

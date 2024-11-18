@@ -43,18 +43,25 @@ session_start();
         <button class="btn btn-outline-light" onclick="skipSession(); skipSound();" id="skipButton">
             <i class="bi bi-skip-end-fill"></i>
         </button>
-        <audio id="soundEffect" src="../static/sounds/Click.m4a" preload="auto"></audio>
-        <audio id="tickingSound" src="../static/sounds/Tick.m4a" preload="auto"></audio>
-        <audio id="alertBell" src="../static/sounds/Bell.m4a" preload="auto"></audio>
-        <audio id="alertKitchen" src="../static/sounds/Kitchen.m4a" preload="auto"></audio>
-        <audio id="alertDigital" src="../static/sounds/Digital.m4a" preload="auto"></audio>
-        <audio id="skipSound" src="../static/sounds/Skip.m4a" preload="auto"></audio>
+        <audio id="soundEffect" src="../sounds/Click.m4a" preload="auto"></audio>
+        <audio id="tickingSound" src="../sounds/Tick.m4a" preload="auto"></audio>
+        <audio id="alertBell" src="../sounds/Bell.m4a" preload="auto"></audio>
+        <audio id="alertKitchen" src="../sounds/Kitchen.m4a" preload="auto"></audio>
+        <audio id="alertDigital" src="../sounds/Digital.m4a" preload="auto"></audio>
+        <audio id="skipSound" src="../sounds/Skip.m4a" preload="auto"></audio>
     </div>
     <div class="task-container">
         <h3>Feladatok</h3>
         <div id="tasksContainer">
             <button class="add-task-btn" onclick="addTask()">+ Feladat hozzáadása</button>
         </div>
+    </div>
+
+    <div class="spotify-player">
+        <iframe id="spotifyPlayer"
+                src="https://open.spotify.com/embed/playlist/3kwibhwWt8PJaP9UQPRHzZ?utm_source=generator&theme=0"
+                frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture">
+        </iframe>
     </div>
 </main>
 
