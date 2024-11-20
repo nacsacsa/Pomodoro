@@ -114,11 +114,12 @@ function stopTimer() {
     document.getElementById("skipButton").style.display = "none";
 }
 
-function handleSessionEnd(){
+function handleSessionEnd() {
     if (mode === 'pomodoro') {
         pomodoroCount++;
         if (pomodoroCount === longBreakInterval) {
             mode = 'long-break';
+            addPomodoroToDatabase();
             timeLeft = timeSettings[mode];
             pomodoroCount = 0;
         } else {
@@ -141,10 +142,31 @@ function playAlarmSound() {
     soundEffect.play();
 }
 
+function addPomodoroToDatabase() {
+    const action = 'add';
+    const mode = 'pomodoro';
+    const timestamp = new Date().toISOString();
+
+    fetch('add_pomodoro.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `action=${encodeURIComponent(action)}&mode=${encodeURIComponent(mode)}&timestamp=${encodeURIComponent(timestamp)}`
+    })
+        .then(response => response.text())
+        .then(data => {
+            console.log("Pomodoro hozzáadása:", data);
+        })
+        .catch(error => {
+            console.error("Hiba történt az adatbázishoz adás során:", error);
+        });
+}
+
+
 function skipSession() {
     stopTimer();
     handleSessionEnd();
-
     const skipSound = document.getElementById("skipSound");
     skipSound.volume = window.volume;
     skipSound.play();
