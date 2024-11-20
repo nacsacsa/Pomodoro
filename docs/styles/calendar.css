@@ -95,3 +95,9 @@ body {
     background-color: #2196F3;
     color: white;
 }
+
+.tomato {
+    color: #ff6347; /* Tomaten szín (piros) */
+    font-size: 1.2em; /* Paradicsom méretének növelése */
+    margin: 3px; /* Apró távolság a paradicsomok között */
+}
