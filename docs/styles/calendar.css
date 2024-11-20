@@ -102,6 +102,10 @@ body {
     margin: 3px; /* Apró távolság a paradicsomok között */
 }
 
+.other-month {
+    color: rgba(34, 34, 34, 0.34);
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -129,4 +133,11 @@ body {
     color: white;
     outline: none;
     box-shadow: none;
+}
+
+#current-month {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
 }
