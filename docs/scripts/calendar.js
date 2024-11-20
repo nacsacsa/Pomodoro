@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
     // A PHP-ből átadott pomodoro adatok
     const pomodoroData = JSON.parse(document.getElementById('pomodoro-data').textContent);
 
@@ -75,7 +76,23 @@
             calendar.appendChild(dayElement);
         }
 
-        // Segédfüggvény a dátum formázásához (YYYY-MM-DD formátum)
+        // Az utolsó hónap napjai (a következő hónap napjai)
+        const totalCells = 49;
+        const remainingCells = totalCells - calendar.children.length;
+        for (let i = 1; i <= remainingCells; i++) {
+            const nextMonthDay = document.createElement('div');
+            nextMonthDay.classList.add('day', 'other-month');
+            nextMonthDay.textContent = i;
+
+            if (new Date(year, month + 1, i).getDay() === 0) {
+                nextMonthDay.classList.add('sunday');
+            }
+
+            calendar.appendChild(nextMonthDay);
+        }
+    }
+
+    // Segédfüggvény a dátum formázásához (YYYY-MM-DD formátum)
     function formatDate(date) {
         const year = date.getFullYear();
         const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -93,3 +110,7 @@
         currentDate.setMonth(currentDate.getMonth() + 1);
         generateCalendar(currentDate.getMonth(), currentDate.getFullYear());
     });
+
+    // Naptár inicializálása az aktuális hónap és év szerint
+    generateCalendar(currentDate.getMonth(), currentDate.getFullYear());
+});
