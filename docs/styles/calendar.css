@@ -85,3 +85,8 @@ body {
     background-color: #ffeb3b;
     color: #333;
 }
+
+.sunday {
+    background-color: rgba(255, 179, 71, 0.5); /* Világos narancs szín a vasárnapnak */
+    color: white;
+}
