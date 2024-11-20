@@ -101,3 +101,32 @@ body {
     font-size: 1.2em; /* Paradicsom méretének növelése */
     margin: 3px; /* Apró távolság a paradicsomok között */
 }
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navigation button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+    font-size: 2.3em;
+}
+
+.navigation button:hover {
+    color: #c3c3c3;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.navigation button:focus {
+    color: white;
+    outline: none;
+    box-shadow: none;
+}
