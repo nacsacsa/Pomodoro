@@ -141,3 +141,37 @@ body {
     text-align: center;
     flex: 1;
 }
+
+@media (max-width: 768px) {
+    .calendar {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .day, .day-header {
+        font-size: 0.9em;
+        padding: 12px;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #current-month {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .day, .day-header {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .navbar a {
+        font-size: 0.8em;
+        padding: 5px 10px;
+    }
+}
