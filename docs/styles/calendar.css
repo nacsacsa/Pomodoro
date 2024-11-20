@@ -60,3 +60,28 @@ body {
     gap: 10px;
     margin-top: 10px;
 }
+
+.day {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.day-header {
+    background-color: rgba(255, 255, 255, 0.51);
+    color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.day:hover {
+    background-color: #ffeb3b;
+    color: #333;
+}
