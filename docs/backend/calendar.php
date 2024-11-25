@@ -33,6 +33,8 @@ $pomodoroDataJson = json_encode($pomodoroData);
 </head>
 <body>
 
+<script src="../scripts/calendar.js"></script>
+
 <div class="navbar">
     <a href="index.php">Főoldal</a>
     <a href="logout.php">Kijelentkezés</a>
