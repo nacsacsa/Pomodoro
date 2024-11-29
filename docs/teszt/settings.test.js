@@ -43,3 +43,4 @@ describe('Settings Management Functions', () => {
         jest.clearAllMocks();
         mode = 'pomodoro'; // Reset mode if needed before each test
     });
+});
