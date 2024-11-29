@@ -58,4 +58,37 @@ $conn->close();
     <link rel="stylesheet" href="../styles/profile.css">
     <script src="../scripts/passwordEyeSwitch.js"></script>
 </head>
+<body>
+<div class="navbar">
+    <a href="index.php" class="back-button"><i class="bi bi-arrow-left-square-fill"></i></a>
+</div>
+
+<div class="container">
+    <h2>Fiók Beállításai</h2>
+
+    <?php if ($error_message): ?>
+        <p class="error-message"><?php echo $error_message; ?></p>
+    <?php endif; ?>
+
+    <?php if ($success_message): ?>
+        <p class="success-message"><?php echo $success_message; ?></p>
+    <?php endif; ?>
+
+    <form action="profile.php" method="POST">
+        <label for="current_password">Jelenlegi Jelszó</label>
+        <div class="password-container">
+            <input type="password" id="current_password" name="current_password" required>
+            <i class="bi bi-eye-slash" id="current_password_icon"
+               onclick="togglePasswordVisibility('current_password')"></i>
+        </div>
+        <label for="new_password">Új Jelszó</label>
+        <div class="password-container">
+            <input type="password" id="new_password" name="new_password" required>
+            <i class="bi bi-eye-slash" id="new_password_icon"
+               onclick="togglePasswordVisibility('new_password')"></i>
+        </div>
+        <button type="submit" class="button">Jelszó Módosítása</button>
+    </form>
+</div>
+</body>
 </html>
