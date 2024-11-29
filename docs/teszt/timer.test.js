@@ -58,3 +58,12 @@ describe('Pomodoro Timer Functions', () => {
         updateDisplay();
         expect(document.getElementById('timeDisplay').textContent).toBe("25:00");
     });
+
+    // Update the mode and display for pomodoro
+    test('should update the mode and display for pomodoro', () => {
+        selectMode('pomodoro');
+        expect(document.body.classList.contains('pomodoro-mode')).toBe(true);
+        expect(document.getElementById('modeTitle').textContent).toBe("Pomodoro");
+    });
+
+});
