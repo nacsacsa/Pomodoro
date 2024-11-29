@@ -51,3 +51,10 @@ describe('Pomodoro Timer Functions', () => {
         expect(timeSettings['short-break']).toBe(300); // 5 minutes
         expect(timeSettings['long-break']).toBe(900); // 15 minutes
     });
+
+    // Correctly display time in updateDisplay
+    test('should display correct time format in updateDisplay', () => {
+        global.timeLeft = 1500; // 25 minutes
+        updateDisplay();
+        expect(document.getElementById('timeDisplay').textContent).toBe("25:00");
+    });
