@@ -8,6 +8,7 @@
     <title>Bejelentkezés - Pomodoro</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/login.css">
+    <script src="scripts/passwordEyeSwitch.js"></script>
 </head>
 <body>
 <div class="container">
@@ -19,6 +20,11 @@
         <input type="email" id="email" name="email" placeholder="example@mail.com" required>
         <label for="password">JELSZÓ</label>
         <input type="password" id="password" name="password" placeholder="" required>
+        <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="" required>
+            <i class="bi bi-eye-slash" id="password_icon"
+               onclick="togglePasswordVisibility('password')"></i>
+        </div>
         <button type="submit" class="button">Bejelentkezés</button>
     </form>
     <p class="redirect-text">Ha még nincs fiókod, <a href="signUp.html" style="color: #ff6b6b;">itt tudsz regisztrálni</a></p>
