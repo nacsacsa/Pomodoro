@@ -44,3 +44,10 @@ describe('Pomodoro Timer Functions', () => {
         jest.clearAllTimers();
         jest.restoreAllMocks();
     });
+
+    // Initialize time settings correctly
+    test('should initialize time settings correctly', () => {
+        expect(timeSettings.pomodoro).toBe(1500); // 25 minutes
+        expect(timeSettings['short-break']).toBe(300); // 5 minutes
+        expect(timeSettings['long-break']).toBe(900); // 15 minutes
+    });
