@@ -82,4 +82,11 @@ describe('Pomodoro Timer Functions', () => {
         expect(global.mode).toBe('pomodoro');
     });
 
+    // Play alarm sound at the end of a session
+    test('should play alarm sound at the end of a session', () => {
+        const playAlarmSoundSpy = jest.spyOn(global, 'playAlarmSound');
+        handleSessionEnd();
+        expect(playAlarmSoundSpy).toHaveBeenCalled();
+    });
+
 });
