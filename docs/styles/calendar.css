@@ -51,7 +51,7 @@ body {
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .calendar {
@@ -64,11 +64,22 @@ body {
 .day {
     background-color: rgba(255, 255, 255, 0.25);
     color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s;
     font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+}
+
+.day span.date {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: auto;
 }
 
 .day-header {
@@ -87,7 +98,7 @@ body {
 }
 
 .sunday {
-    background-color: rgba(255, 179, 71, 0.5); /* Világos narancs szín a vasárnapnak */
+    background-color: rgba(255, 179, 71, 0.5);
     color: white;
 }
 
@@ -97,9 +108,10 @@ body {
 }
 
 .tomato {
-    color: #ff6347; /* Tomaten szín (piros) */
-    font-size: 1.2em; /* Paradicsom méretének növelése */
-    margin: 3px; /* Apró távolság a paradicsomok között */
+    color: #5fc806;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: auto;
 }
 
 .other-month {
