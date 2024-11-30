@@ -121,3 +121,13 @@ button:active {
 .success-message {
     color: #27ae60;
 }
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+}
