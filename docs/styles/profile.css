@@ -57,3 +57,14 @@ body {
     text-align: left;
     margin-top: 80px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
