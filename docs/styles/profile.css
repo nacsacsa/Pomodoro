@@ -131,3 +131,23 @@ button:active {
     width: 100%;
     padding-right: 40px;
 }
+
+#current_password_icon,
+#new_password_icon {
+    position: absolute;
+    height: auto;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
+    color: #333;
+    font-size: 1.5em;
+    transition: transform 0.2s, color 0.2s;
+}
+
+#current_password_icon:hover,
+#new_password_icon:hover
+{
+    color: #ff6b6b;
+    transform: scale(1.3);
+    cursor: pointer;
+}
