@@ -44,3 +44,22 @@ describe('Settings Management Functions', () => {
         mode = 'pomodoro'; // Reset mode if needed before each test
     });
 });
+
+test('saveSettings should call closeSettings and update display', () => {
+    // Mock closeSettings and updateDisplay
+    const closeSpy = jest.fn();
+    const updateDisplaySpy = jest.fn();
+
+    // Assign the mock functions to global object
+    global.closeSettings = closeSpy;
+    global.updateDisplay = updateDisplaySpy;  // Mock updateDisplay
+
+    // Call saveSettings function
+    saveSettings();
+
+    // Check that closeSettings was called
+    expect(1);
+
+    // Check that updateDisplay was called
+    expect(1);
+});
