@@ -161,3 +161,46 @@ button:active {
     color: red;
     font-weight: bold;
 }
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 400px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    input[type="password"],
+    input[type="text"] {
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 400px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    input[type="password"],
+    input[type="text"] {
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1.1em;
+    }
+}
