@@ -66,4 +66,12 @@ describe('Pomodoro Timer Functions', () => {
         expect(document.getElementById('modeTitle').textContent).toBe("Pomodoro");
     });
 
+    // Stop timer and update button text
+    test('should stop timer and update button text', () => {
+        startTimer();
+        stopTimer();
+        expect(global.isTimerRunning).toBe(false);
+        expect(document.getElementById("toggleButton").textContent).toBe("FOLYTATÁS");
+    });
+
 });
