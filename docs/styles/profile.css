@@ -110,3 +110,14 @@ button:hover {
 button:active {
     background-color: #ff3333;
 }
+
+.error-message,
+.success-message {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #e74c3c;
+}
+
+.success-message {
+    color: #27ae60;
+}
