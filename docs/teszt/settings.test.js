@@ -77,3 +77,24 @@ test('updateTimeSettings should update time settings values based on input field
     expect(timeSettings['long-break']).toBe(1200); // 20 minutes in seconds
     expect(longBreakInterval).toBe(5);
 });
+
+test('applySettings should update volume and call updateTimeSettings', () => {
+    // Mock the updateTimeSettings function inside the test
+    const updateSpy = jest.fn();
+    global.updateTimeSettings = updateSpy;  // Assign the mock function to the global object
+
+    // Set volume control value
+    document.getElementById("volumeControl").value = "0.75";
+
+    // Call applySettings
+    applySettings();
+
+    // Check if the volume was updated
+    expect(window.volume).toBe(0.75);
+
+    // Check if updateTimeSettings was called
+    expect(updateSpy).toHaveBeenCalled();
+
+    // Cleanup: Restore the original function
+    delete global.updateTimeSettings;
+});
