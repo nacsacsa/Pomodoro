@@ -33,4 +33,19 @@ describe('Task Management Functions', () => {
         expect(taskContainer.className).toBe("task");
         ;
     });
+
+    test('updateTask should update the task name', () => {
+        const taskElement = document.querySelector(".task span");
+        const oldTaskName = taskElement.textContent;
+
+        updateTask(taskElement, oldTaskName);
+
+        // Simulate editing the task
+        taskElement.textContent = "Updated Task";
+        expect(taskElement.textContent).toBe("Updated Task");
+
+        // Verify if the task name was updated in all spans
+        const updatedTask = document.querySelector(".task span");
+        expect(updatedTask.textContent).toBe("Updated Task");
+    });
 })
