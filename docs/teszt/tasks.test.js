@@ -48,4 +48,16 @@ describe('Task Management Functions', () => {
         const updatedTask = document.querySelector(".task span");
         expect(updatedTask.textContent).toBe("Updated Task");
     });
+
+    test('deleteTask should remove the task', () => {
+        const task = document.querySelector(".task");
+        const deleteButton = task.querySelector("button");
+        deleteButton.onclick = jest.fn();
+
+        deleteTask(deleteButton);
+
+        // Check if the task is removed from the DOM
+        const deletedTask = document.querySelector(".task");
+        expect(deletedTask).toBeNull();
+    });
 })
