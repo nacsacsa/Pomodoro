@@ -4,7 +4,7 @@ include 'database.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!isset($_POST['email']) || !isset($_POST['password'])) {
-        echo "Hiba: Hiányzó email vagy jelszó mező!";
+        echo json_encode(["success" => false, "message" => "Hiba: Hiányzó email vagy jelszó mező!"]);
         exit;
     }
 
@@ -22,12 +22,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $user['password'])) {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['user_name'] = $user['name'];
-            header("Location: ../backend/index.php");
+            echo json_encode(["success" => true]);
         } else {
-            echo "Hibás jelszó!";
+            echo json_encode(["success" => false, "message" => "Hibás jelszó!"]);
         }
     } else {
-        echo "Nincs ilyen email!";
+        echo json_encode(["success" => false, "message" => "Nincs ilyen email!"]);
     }
     $stmt->close();
 }
