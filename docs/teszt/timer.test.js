@@ -74,4 +74,12 @@ describe('Pomodoro Timer Functions', () => {
         expect(document.getElementById("toggleButton").textContent).toBe("FOLYTATÁS");
     });
 
+    // Handle session end and switch modes correctly
+    test('should handle session end and switch modes correctly', () => {
+        selectMode('pomodoro');
+        global.pomodoroCount = 3;
+        handleSessionEnd();
+        expect(global.mode).toBe('pomodoro');
+    });
+
 });
