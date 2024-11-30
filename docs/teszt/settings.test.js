@@ -63,3 +63,17 @@ test('saveSettings should call closeSettings and update display', () => {
     // Check that updateDisplay was called
     expect(1);
 });
+
+test('updateTimeSettings should update time settings values based on input fields', () => {
+    document.getElementById("pomodoroTime").value = "30";
+    document.getElementById("shortBreakTime").value = "10";
+    document.getElementById("longBreakTime").value = "20";
+    document.getElementById("longBreakInterval").value = "5";
+
+    updateTimeSettings();
+
+    expect(timeSettings.pomodoro).toBe(1800); // 30 minutes in seconds
+    expect(timeSettings['short-break']).toBe(600); // 10 minutes in seconds
+    expect(timeSettings['long-break']).toBe(1200); // 20 minutes in seconds
+    expect(longBreakInterval).toBe(5);
+});
