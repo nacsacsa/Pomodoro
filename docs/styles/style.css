@@ -422,4 +422,17 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     .task span {
         font-size: 0.9em;
     }
+
+    .spotify-player {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+    }
+
+    .settings-modal {
+        padding: 0 10px;
+    }
 }
