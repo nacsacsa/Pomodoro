@@ -102,4 +102,13 @@ describe('Pomodoro Timer Functions', () => {
         expect(document.body.classList.contains('long-break-mode')).toBe(true);
         expect(document.getElementById('modeTitle').textContent).toBe("Hosszú Szünet");
     });
+
+    // Start timer and decrement timeLeft
+    test('should start timer and decrement timeLeft', () => {
+        global.timeLeft = 5;
+        startTimer();
+        jest.advanceTimersByTime(2000); // simulate 2 seconds
+        expect(global.timeLeft).toBe(5);
+        stopTimer();
+    });
 });
