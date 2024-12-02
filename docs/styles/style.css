@@ -413,4 +413,13 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
         padding: 8px 16px;
         font-size: 0.9em;
     }
+
+    .add-task-btn {
+        font-size: 0.9em;
+        padding: 6px;
+    }
+
+    .task span {
+        font-size: 0.9em;
+    }
 }
