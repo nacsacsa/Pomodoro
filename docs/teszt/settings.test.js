@@ -98,3 +98,13 @@ test('applySettings should update volume and call updateTimeSettings', () => {
     // Cleanup: Restore the original function
     delete global.updateTimeSettings;
 });
+
+test('toggleDropdown should toggle the dropdown menu display', () => {
+    const dropdown = document.getElementById("dropdownMenu");
+
+    toggleDropdown();
+    expect(dropdown.style.display).toBe("block");
+
+    toggleDropdown();
+    expect(dropdown.style.display).toBe("none");
+});
