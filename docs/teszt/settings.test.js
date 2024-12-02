@@ -44,6 +44,13 @@ describe('Settings Management Functions', () => {
         mode = 'pomodoro'; // Reset mode if needed before each test
     });
 
+    test('openSettings should display the settings modal', () => {
+        openSettings();
+        const modal = document.getElementById("settingsModal");
+        expect(modal.style.display).toBe("flex");
+        expect(modal.scrollTop).toBe(0);
+    });
+
     test('saveSettings should call closeSettings and update display', () => {
         // Mock closeSettings and updateDisplay
         const closeSpy = jest.fn();
