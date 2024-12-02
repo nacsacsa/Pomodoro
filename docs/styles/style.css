@@ -283,6 +283,7 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     margin-right: 10px;
 }
 
+
 .volume-control-container {
     display: flex;
     align-items: center;
@@ -373,4 +374,10 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
 
 .nav-buttons {
     position: relative;
+}
+
+@media (max-width: 1360px) {
+    .task-container {
+        margin-bottom: 100px;
+    }
 }
