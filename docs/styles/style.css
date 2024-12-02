@@ -381,3 +381,25 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
         margin-bottom: 100px;
     }
 }
+
+@media (max-width: 600px) {
+    main {
+        padding: 0 50px;
+    }
+
+    .navbar {
+        padding: 5px 10px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-buttons button {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
