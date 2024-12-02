@@ -111,4 +111,14 @@ describe('Pomodoro Timer Functions', () => {
         expect(global.timeLeft).toBe(5);
         stopTimer();
     });
+
+    // Play ticking sound when less than 5 seconds left
+    test('should play ticking sound when less than 5 seconds left', () => {
+        const playTickingSoundSpy = jest.spyOn(global, 'playTickingSound');
+        global.timeLeft = 4;
+        startTimer();
+        jest.advanceTimersByTime(1000);
+        expect(playTickingSoundSpy).toHaveBeenCalled();
+        stopTimer();
+    });
 });
