@@ -51,15 +51,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const currentDateObj = new Date(year, month, day); // Az aktuális nap dátuma
             const dateString = formatDate(currentDateObj); // Formázott dátum (YYYY-MM-DD)
 
-            // Ha van Pomodoro ciklus ezen a napon, hozzáadjuk a paradicsom mennyiségét
+            // Ha van Pomodoro ciklus ezen a napon, hozzáadjuk a paradicsomot
             if (pomodoroData[dateString]) {
-                const tomatoCount = pomodoroData[dateString];
-                const tomato = document.createElement('span');
-                tomato.classList.add('tomato');
-
-                // Ha több Pomodoro van, megjelenítjük a számot is
-                tomato.textContent = tomatoCount > 1 ? `${tomatoCount}x🍅` : '🍅';
-                dayElement.appendChild(tomato);
+                for (let i = 0; i < pomodoroData[dateString]; i++) {
+                    const tomato = document.createElement('span');
+                    tomato.classList.add('tomato');
+                    tomato.textContent = '🍅';
+                    dayElement.appendChild(tomato);
+                }
             }
 
             // Ha ma van
