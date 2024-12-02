@@ -43,68 +43,79 @@ describe('Settings Management Functions', () => {
         jest.clearAllMocks();
         mode = 'pomodoro'; // Reset mode if needed before each test
     });
-});
 
-test('saveSettings should call closeSettings and update display', () => {
-    // Mock closeSettings and updateDisplay
-    const closeSpy = jest.fn();
-    const updateDisplaySpy = jest.fn();
+    test('saveSettings should call closeSettings and update display', () => {
+        // Mock closeSettings and updateDisplay
+        const closeSpy = jest.fn();
+        const updateDisplaySpy = jest.fn();
 
-    // Assign the mock functions to global object
-    global.closeSettings = closeSpy;
-    global.updateDisplay = updateDisplaySpy;  // Mock updateDisplay
+        // Assign the mock functions to global object
+        global.closeSettings = closeSpy;
+        global.updateDisplay = updateDisplaySpy;  // Mock updateDisplay
 
-    // Call saveSettings function
-    saveSettings();
+        // Call saveSettings function
+        saveSettings();
 
-    // Check that closeSettings was called
-    expect(1);
+        // Check that closeSettings was called
+        expect(1);
 
-    // Check that updateDisplay was called
-    expect(1);
-});
+        // Check that updateDisplay was called
+        expect(1);
+    });
 
-test('updateTimeSettings should update time settings values based on input fields', () => {
-    document.getElementById("pomodoroTime").value = "30";
-    document.getElementById("shortBreakTime").value = "10";
-    document.getElementById("longBreakTime").value = "20";
-    document.getElementById("longBreakInterval").value = "5";
+    test('updateTimeSettings should update time settings values based on input fields', () => {
+        document.getElementById("pomodoroTime").value = "30";
+        document.getElementById("shortBreakTime").value = "10";
+        document.getElementById("longBreakTime").value = "20";
+        document.getElementById("longBreakInterval").value = "5";
 
-    updateTimeSettings();
+        updateTimeSettings();
 
-    expect(timeSettings.pomodoro).toBe(1800); // 30 minutes in seconds
-    expect(timeSettings['short-break']).toBe(600); // 10 minutes in seconds
-    expect(timeSettings['long-break']).toBe(1200); // 20 minutes in seconds
-    expect(longBreakInterval).toBe(5);
-});
+        expect(timeSettings.pomodoro).toBe(1800); // 30 minutes in seconds
+        expect(timeSettings['short-break']).toBe(600); // 10 minutes in seconds
+        expect(timeSettings['long-break']).toBe(1200); // 20 minutes in seconds
+        expect(longBreakInterval).toBe(5);
+    });
 
-test('applySettings should update volume and call updateTimeSettings', () => {
-    // Mock the updateTimeSettings function inside the test
-    const updateSpy = jest.fn();
-    global.updateTimeSettings = updateSpy;  // Assign the mock function to the global object
+    test('applySettings should update volume and call updateTimeSettings', () => {
+        // Mock the updateTimeSettings function inside the test
+        const updateSpy = jest.fn();
+        global.updateTimeSettings = updateSpy;  // Assign the mock function to the global object
 
-    // Set volume control value
-    document.getElementById("volumeControl").value = "0.75";
+        // Set volume control value
+        document.getElementById("volumeControl").value = "0.75";
 
-    // Call applySettings
-    applySettings();
+        // Call applySettings
+        applySettings();
 
-    // Check if the volume was updated
-    expect(window.volume).toBe(0.75);
+        // Check if the volume was updated
+        expect(window.volume).toBe(0.75);
 
-    // Check if updateTimeSettings was called
-    expect(updateSpy).toHaveBeenCalled();
+        // Check if updateTimeSettings was called
+        expect(updateSpy).toHaveBeenCalled();
 
-    // Cleanup: Restore the original function
-    delete global.updateTimeSettings;
-});
+        // Cleanup: Restore the original function
+        delete global.updateTimeSettings;
+    });
 
-test('toggleDropdown should toggle the dropdown menu display', () => {
-    const dropdown = document.getElementById("dropdownMenu");
+    test('toggleDropdown should toggle the dropdown menu display', () => {
+        const dropdown = document.getElementById("dropdownMenu");
 
-    toggleDropdown();
-    expect(dropdown.style.display).toBe("block");
+        toggleDropdown();
+        expect(dropdown.style.display).toBe("block");
 
-    toggleDropdown();
-    expect(dropdown.style.display).toBe("none");
+        toggleDropdown();
+        expect(dropdown.style.display).toBe("none");
+    });
+
+    test('playAlertSound should play the selected alert sound at the correct volume', () => {
+        document.getElementById("alarmSound").value = "digital";
+        document.getElementById("volumeControl").value = "30";
+
+        playAlertSound();
+
+        expect(global.Audio).toHaveBeenCalledWith('static/sounds/Digital.m4a');
+        expect(playMock).toHaveBeenCalled();
+    });
+
 });
