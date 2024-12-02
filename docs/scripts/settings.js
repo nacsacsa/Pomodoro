@@ -98,9 +98,8 @@ document.addEventListener('click', function (event) {
 });
 
 const alertSounds = {
-    bell: '/Pomodoro/docs/sounds/Bell.m4a', digital: '/Pomodoro/docs/sounds/Digital.m4a', kitchen: '/Pomodoro/docs/sounds/Kitchen.m4a'
+    bell: 'static/sounds/Bell.m4a', digital: 'static/sounds/Digital.m4a', kitchen: 'static/sounds/Kitchen.m4a'
 };
-
 
 function playAlertSound() {
     const selectedSound = document.getElementById("alarmSound").value;
