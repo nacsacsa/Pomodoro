@@ -96,4 +96,10 @@ describe('Pomodoro Timer Functions', () => {
         expect(document.getElementById('modeTitle').textContent).toBe("Rövid Szünet");
     });
 
+    // Update the mode and display for long-break
+    test('should update the mode and display for long-break', () => {
+        selectMode('long-break');
+        expect(document.body.classList.contains('long-break-mode')).toBe(true);
+        expect(document.getElementById('modeTitle').textContent).toBe("Hosszú Szünet");
+    });
 });
