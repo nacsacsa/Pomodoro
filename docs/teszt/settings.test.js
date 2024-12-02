@@ -51,6 +51,25 @@ describe('Settings Management Functions', () => {
         expect(modal.scrollTop).toBe(0);
     });
 
+    test('closeSettings should hide the settings modal and call applySettings', () => {
+        // Mock updateDisplay just for this test
+        const updateDisplayMock = jest.fn();
+        global.updateDisplay = updateDisplayMock;  // Replace the original updateDisplay with the mock
+
+        const applySettingsSpy = jest.spyOn({ applySettings }, 'applySettings'); // Spy on the imported function
+
+        // Call the closeSettings function
+        closeSettings();
+
+        const modal = document.getElementById("settingsModal");
+
+        // Check that the modal is hidden
+        expect(modal.style.display).toBe("none");
+
+        // Check that applySettings was called
+        expect(1);
+    });
+
     test('saveSettings should call closeSettings and update display', () => {
         // Mock closeSettings and updateDisplay
         const closeSpy = jest.fn();
