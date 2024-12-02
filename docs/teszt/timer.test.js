@@ -89,4 +89,11 @@ describe('Pomodoro Timer Functions', () => {
         expect(playAlarmSoundSpy).toHaveBeenCalled();
     });
 
+    // Update the mode and display for short-break
+    test('should update the mode and display for short-break', () => {
+        selectMode('short-break');
+        expect(document.body.classList.contains('short-break-mode')).toBe(true);
+        expect(document.getElementById('modeTitle').textContent).toBe("Rövid Szünet");
+    });
+
 });
