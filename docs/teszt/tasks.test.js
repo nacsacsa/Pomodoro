@@ -103,5 +103,24 @@ describe('Task Management Functions', () => {
         expect(soundEffect.volume).toBe(window.volume); // Ensure volume is correctly set to window.volume
     });
 
+    test('skipSound should play the skip sound with the correct volume', () => {
+        // Mock the play function of the audio element
+        const playMock = jest.fn();
+        const skipSoundAudio = document.getElementById("skipSound");
 
+        // Mock the play method on the audio element
+        skipSoundAudio.play = playMock;
+
+        // Set a valid volume for the test (between 0.0 and 1.0)
+        window.volume = 0.5; // This sets the volume to a valid floating-point number
+
+        // Call the skipSound function
+        skipSound();  // This calls the actual skipSound function in your code
+
+        // Check if the play method was called
+        expect(playMock).toHaveBeenCalled();
+
+        // Check if the volume of the skipSound is set correctly
+        expect(skipSoundAudio.volume).toBe(0.5);  // Ensure volume is correctly set to 0.5
+    });
 })
