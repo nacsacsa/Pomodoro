@@ -60,4 +60,48 @@ describe('Task Management Functions', () => {
         const deletedTask = document.querySelector(".task");
         expect(deletedTask).toBeNull();
     });
+
+    test('playSound should play the sound with the correct volume', () => {
+        // Mock the play function of the audio element
+        const playMock = jest.fn();
+        const soundEffect = document.getElementById("soundEffect");
+
+        // Mock the play method on the audio element
+        soundEffect.play = playMock;
+
+        // Ensure window.volume is a valid finite number before using it
+        window.volume = 0.5; // Set window.volume to a valid value between 0 and 1
+
+        // Call the playSound function
+        playSound(); // This calls the actual playSound function
+
+        // Check if the play method was called
+        expect(playMock).toHaveBeenCalled();
+
+        // Check if the volume of the soundEffect is set correctly
+        expect(soundEffect.volume).toBe(window.volume); // Ensure volume is correctly set to window.volume
+    });
+
+    test('playSound should play the sound with the correct volume', () => {
+        // Mock the play function of the audio element
+        const playMock = jest.fn();
+        const soundEffect = document.getElementById("soundEffect");
+
+        // Mock the play method on the audio element
+        soundEffect.play = playMock;
+
+        // Ensure window.volume is a valid finite number before using it
+        window.volume = 0.5; // Set window.volume to a valid value between 0 and 1
+
+        // Call the playSound function
+        playSound(); // This calls the actual playSound function
+
+        // Check if the play method was called
+        expect(playMock).toHaveBeenCalled();
+
+        // Check if the volume of the soundEffect is set correctly
+        expect(soundEffect.volume).toBe(window.volume); // Ensure volume is correctly set to window.volume
+    });
+
+
 })
