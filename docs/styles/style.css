@@ -376,6 +376,13 @@ button:hover, .nav-buttons a:hover, .mode-switch a:hover {
     position: relative;
 }
 
+.welcome-message {
+    text-align: center;
+    margin: -10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
 @media (max-width: 1360px) {
     .task-container {
         margin-bottom: 100px;

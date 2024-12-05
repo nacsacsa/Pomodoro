@@ -17,8 +17,13 @@ session_start();
     <div class="nav-buttons">
         <button onclick="openSettings()"><i class="bi bi-gear-fill"></i>&nbspBeállítások</button>
         <?php if (isset($_SESSION['user_id'])): ?>
-            <a href="profile.php" id="profileButton"><i class="bi bi-person-fill"></i>&nbspFiókom</a>
-            <a href="logout.php" id="logoutButton"><i class="bi bi-box-arrow-left"></i>&nbspKijelentkezés</a>
+            <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
+                <a href="admin.php" id="adminButton"><i class="bi bi-person-fill"></i>&nbspAdmin</a>
+                <a href="logout.php" id="logoutButton"><i class="bi bi-box-arrow-left"></i>&nbspKijelentkezés</a>
+            <?php else: ?>
+                <a href="profile.php" id="profileButton"><i class="bi bi-person-fill"></i>&nbspFiókom</a>
+                <a href="logout.php" id="logoutButton"><i class="bi bi-box-arrow-left"></i>&nbspKijelentkezés</a>
+            <?php endif; ?>
         <?php else: ?>
             <a href="../signUp.html" id="signUpButton"><i class="bi bi-person-fill"></i>&nbspRegisztrálás</a>
             <a href="../login.html" id="loginButton"><i class="bi bi-box-arrow-in-right"></i>&nbspBejelentkezés</a>
@@ -30,7 +35,11 @@ session_start();
         </div>
     </div>
 </header>
+
 <main>
+    <?php if (isset($_SESSION['user_id'])): ?>
+        <p class="welcome-message">Üdv, <?= htmlspecialchars($_SESSION['user_name']); ?>!</p>
+    <?php endif; ?>
     <div class="timer-display">
         <nav class="mode-switch">
             <a id="pomodoroLink" onclick="selectMode('pomodoro')">Pomodoro</a>
