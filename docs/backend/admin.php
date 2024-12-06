@@ -87,6 +87,45 @@ $result = $conn->query($sql);
         </div>
     </div>
 
+<div class="modal fade" id="editUserModal" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editUserModalLabel">Felhasználó Szerkesztése</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm" method="POST" action="edit_user.php">
+                        <input type="hidden" id="editId" name="id">
+                        <div class="form-group">
+                            <label for="editName">Név</label>
+                            <input type="text" class="form-control" id="editName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editEmail">Email</label>
+                            <input type="email" class="form-control" id="editEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editPassword">Jelszó</label>
+                            <input type="password" class="form-control" id="editPassword" name="password" placeholder="Új jelszó">
+                        </div>
+                        <div class="form-group">
+                            <label for="editRole">Szerepkör</label>
+                            <select class="form-control" id="editRole" name="role">
+                                <option value="user">Felhasználó</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-success">Mentés</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
