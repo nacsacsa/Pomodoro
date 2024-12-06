@@ -129,4 +129,17 @@ $result = $conn->query($sql);
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function populateEditForm(id) {
+        fetch('get_user.php?id=' + id)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('editId').value = data.id;
+                document.getElementById('editName').value = data.name;
+                document.getElementById('editEmail').value = data.email;
+                document.getElementById('editRole').value = data.role;
+            })
+            .catch(error => console.error('Error:', error));
+    }
+</script>
 </body>
