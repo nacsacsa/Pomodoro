@@ -6,4 +6,16 @@ A Pomodoro egy időgazdálkodási technika, amelyet Francesco Cirillo fejlesztet
 - ### [Rendszerterv](https://github.com/nacsacsa/Pomodoro/blob/main/Rendszerterv.md)
 
 ## Demo oldal:
-- https://nacsacsa.github.io/Pomodoro/
+- ### Ingyenes elérhető bárhonan (csak vendégként működik): https://nacsacsa.github.io/Pomodoro/
+- ### XAMPP használatával (minden funkció működik localhost-on): http://localhost/Pomodoro/docs/index.html
+
+## Demo videók:
+- ### Főoldal bejelentkezés előtt (vendég):
+    - ![](Demok/guest.gif)
+
+- ### Főoldal bejelentkezés után (felhasználó):
+    - ![](Demok/user.gif)
+
+- ### Főoldal bejelentkezés után (admin):
+    - ![](Demok/admin.gif)
+
